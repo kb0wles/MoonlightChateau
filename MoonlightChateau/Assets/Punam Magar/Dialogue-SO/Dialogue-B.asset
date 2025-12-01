@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
-  m_Name: Dialogue-A
+  m_Name: Dialogue-B
   m_EditorClassIdentifier: 
-  dialogueText: "\u201CRohan\u2026 we need to talk. And this time, I want the truth.
-    No more half-answers.\u201D"
-  character: {fileID: 11400000, guid: a857ba9b5594d6b4abfd24cfa7274448, type: 2}
-  emotion: 5
+  dialogueText: "\u201CI already told you everything I know. Why are you dragging
+    this out?\u201D"
+  character: {fileID: 11400000, guid: e35478651fa384d40bda13f9ed5e5bce, type: 2}
+  emotion: 3
   choices:
   - choiceLabel: 
-    nextNode: {fileID: 11400000, guid: 8f3547d79d6d82447a662dae5c5f5235, type: 2}
+    nextNode: {fileID: 11400000, guid: 3dd09537e6ed49749a22c751e64e65a2, type: 2}

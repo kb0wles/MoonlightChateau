@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
-  m_Name: Dialogue-A
+  m_Name: Dialogue-D
   m_EditorClassIdentifier: 
-  dialogueText: "\u201CRohan\u2026 we need to talk. And this time, I want the truth.
-    No more half-answers.\u201D"
-  character: {fileID: 11400000, guid: a857ba9b5594d6b4abfd24cfa7274448, type: 2}
-  emotion: 5
-  choices:
-  - choiceLabel: 
-    nextNode: {fileID: 11400000, guid: 8f3547d79d6d82447a662dae5c5f5235, type: 2}
+  dialogueText: "\u201CI\u2019m not hiding anything! I\u2014I just wasn\u2019t thinking
+    straight that night.\u201D"
+  character: {fileID: 11400000, guid: e35478651fa384d40bda13f9ed5e5bce, type: 2}
+  emotion: 3
+  choices: []
