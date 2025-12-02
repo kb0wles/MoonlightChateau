@@ -8,7 +8,7 @@ public class Minigame_Click : MonoBehaviour
 
     public Color oldcolor;
 
-    private Image img;
+    public Image img;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
