@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class CheckScript : MonoBehaviour
 {
     [SerializeField] Image Check;
     float time;
