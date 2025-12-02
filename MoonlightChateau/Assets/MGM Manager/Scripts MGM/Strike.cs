@@ -3,19 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Minigame_Click : MonoBehaviour
+public class Strike : MonoBehaviour
 {
-
-    public Color oldcolor;
-
-    public Image img;
+    int numbertest = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        img = GetComponent<Image>();
-
-        oldcolor = img.color;
+        
     }
 
     // Update is called once per frame
@@ -24,8 +19,10 @@ public class Minigame_Click : MonoBehaviour
         
     }
 
-    public void ColorChange()
+    public void StrikeCounter()
     {
-        img.color = Color.white;
+        numbertest++;
+        Debug.Log(numbertest);
     }
+
 }
