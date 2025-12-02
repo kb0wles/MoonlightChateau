@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class checkscript : MonoBehaviour
+public class NewMonoBehaviourScript : MonoBehaviour
 {
     [SerializeField] Image Check;
-    [SerializeField] Minigame_Click clickable;
     float time;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,7 +14,8 @@ public class checkscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(clickable.img.color != clickable.oldcolor)
+        time += Time.deltaTime;
+        if (time >= 2)
         {
             checkoff();
         }
