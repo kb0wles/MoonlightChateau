@@ -3,7 +3,8 @@ using UnityEngine;
 public class WinLose : MonoBehaviour
 {
     [SerializeField] GameObject txt;
-    public int wincount;    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int wincount;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         wincount = 0;
@@ -18,7 +19,7 @@ public class WinLose : MonoBehaviour
 
     void Win()
     {
-        if(wincount >= 3  && txt.gameObject.activeSelf == false)
+        if (wincount >= 3 && txt.gameObject.activeSelf == false)
         {
             txt.gameObject.SetActive(true);
         }
@@ -26,6 +27,9 @@ public class WinLose : MonoBehaviour
 
     void Lose()
     {
-        
+        //if (txt.gameObject.activeSelf == false)
+        //{
+        //    txt.gameObject.SetActive(true);
+        //}
     }
 }
