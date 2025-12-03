@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class WinLose : MonoBehaviour
 {
-    [SerializeField] GameObject txt;
+    [SerializeField] GameObject win;
+    [SerializeField] GameObject lose;
+    [SerializeField] Strike_Counter strikes;
     public int wincount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,17 +21,17 @@ public class WinLose : MonoBehaviour
 
     void Win()
     {
-        if (wincount >= 3 && txt.gameObject.activeSelf == false)
+        if (wincount >= 3 && win.gameObject.activeSelf == false && lose.gameObject.activeSelf == false)
         {
-            txt.gameObject.SetActive(true);
+            win.gameObject.SetActive(true);
         }
     }
 
     void Lose()
     {
-        //if (txt.gameObject.activeSelf == false)
-        //{
-        //    txt.gameObject.SetActive(true);
-        //}
+        if (strikes.GetStrikes() >= 3 && win.gameObject.activeSelf == false && lose.gameObject.activeSelf == false)
+        {
+            lose.gameObject.SetActive(true);
+        }
     }
 }
