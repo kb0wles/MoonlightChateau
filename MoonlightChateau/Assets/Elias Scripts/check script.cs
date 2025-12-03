@@ -5,6 +5,7 @@ public class CheckScript : MonoBehaviour
 {
     [SerializeField] Image Check;
     [SerializeField] Minigame_Click clickable;
+    [SerializeField] WinLose win;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +23,10 @@ public class CheckScript : MonoBehaviour
 
     void checkoff()
     {
-        Check.gameObject.SetActive(true);
+        if (Check.gameObject.activeSelf == false)
+        {
+            Check.gameObject.SetActive(true);
+            win.wincount++;
+        }
     }
 }
