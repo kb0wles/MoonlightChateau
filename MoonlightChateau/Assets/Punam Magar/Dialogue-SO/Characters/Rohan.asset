@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f63dfb29483e7e47a5db4dde5688741, type: 3}
+  m_Name: Rohan
+  m_EditorClassIdentifier: 
+  characterName: Rohan
+  portraits:
+  - image: {fileID: 1821876378, guid: 769d1fb66be11b34bafacfe5d457a346, type: 3}
+    emotion: 0
+  - image: {fileID: -1992227171, guid: 769d1fb66be11b34bafacfe5d457a346, type: 3}
+    emotion: 1
+  - image: {fileID: 131397201, guid: 769d1fb66be11b34bafacfe5d457a346, type: 3}
+    emotion: 2
+  - image: {fileID: -518875750, guid: 769d1fb66be11b34bafacfe5d457a346, type: 3}
+    emotion: 3
+  - image: {fileID: 1605197788, guid: 769d1fb66be11b34bafacfe5d457a346, type: 3}
+    emotion: 4
+  - image: {fileID: 767699443, guid: 769d1fb66be11b34bafacfe5d457a346, type: 3}
+    emotion: 5
+  - image: {fileID: 2113129314, guid: 769d1fb66be11b34bafacfe5d457a346, type: 3}
+    emotion: 6
