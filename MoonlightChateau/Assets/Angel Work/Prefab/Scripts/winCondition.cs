@@ -27,15 +27,19 @@ public class winCondition : MonoBehaviour
 
     public void ChooseEndings()
     {
-        // Good ending
-        if ( winCounter == allGamesWon)
+        if (wonAllGames == true)
         {
-            TrueEnding();
-        }
-        // Bad ending
-        else if ( winCounter != allGamesWon )
-        {
-            FalseEnding();
+            // Good ending
+            if (winCounter == allGamesWon)
+            {
+                TrueEnding();
+            }
+
+            // Bad ending
+            if (winCounter == allGamesWon)
+            {
+                FalseEnding();
+            }
         }
     }
 
