@@ -16,12 +16,18 @@ public class DialogueManager : MonoBehaviour
     // settings
     [SerializeField] float typeSpeed = 0.02f;
 
+    [Header("Character INFOs")]
     [SerializeField] TextMeshProUGUI dialogueBoxTXT;
+    [SerializeField] TextMeshProUGUI nameTXT;
     [SerializeField] Image characterIMG;
 
     DialogueNode currentDialougeNode;
     TextMeshProUGUI nextCloseTXT;
     Button nextCloseBTN;
+
+    bool isTyping = false;
+
+    Coroutine typeTextCoro;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,9 +40,14 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && isTyping == false)
         {
             DisplayDialogue(startDialogueNode);
+        }
+
+        if(isTyping && Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            SkipTyping();
         }
     }
 
@@ -46,12 +57,14 @@ public class DialogueManager : MonoBehaviour
         closeableGO.SetActive(true);
 
         characterIMG.sprite = node.character.GetPortraitByEmotion(node.emotion);
+        nameTXT.text = node.character.characterName;
 
-        StartCoroutine(TypeText(node));
+        typeTextCoro = StartCoroutine(TypeText(node));
     }
 
     IEnumerator TypeText(DialogueNode node)
     {
+        isTyping = true;
         dialogueBoxTXT.text = "";
 
         foreach (char letter in node.dialogueText.ToCharArray()) 
@@ -59,6 +72,7 @@ public class DialogueManager : MonoBehaviour
             dialogueBoxTXT.text += letter;
             yield return new WaitForSeconds(typeSpeed);
         }
+        isTyping = false;
 
         AddChoices(node);
     }
@@ -112,5 +126,13 @@ public class DialogueManager : MonoBehaviour
         nextCloseBTN.onClick.RemoveAllListeners();
         closeableGO.SetActive(false);
         nextCloseGO.SetActive(false);
+    }
+
+    void SkipTyping() 
+    {
+        StopCoroutine(typeTextCoro);
+        dialogueBoxTXT.text = currentDialougeNode.dialogueText;
+        isTyping = false;
+        AddChoices(currentDialougeNode);
     }
 }
