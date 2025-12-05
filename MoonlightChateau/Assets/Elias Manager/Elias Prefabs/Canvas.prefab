@@ -1720,6 +1720,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: TFcheck
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6265865140430337297, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
       propertyPath: m_Name
       value: Clicked (1)
@@ -1841,6 +1845,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: TFcheck
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6265865140430337297, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
       propertyPath: m_Name
       value: Clicked (2)
@@ -1961,6 +1969,10 @@ PrefabInstance:
     - target: {fileID: 3203608763101413532, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: TFcheck
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6265865140430337297, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
       propertyPath: m_Name

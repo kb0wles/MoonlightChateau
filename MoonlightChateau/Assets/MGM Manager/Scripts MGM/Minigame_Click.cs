@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Minigame_Click : MonoBehaviour
 {
     [SerializeField] bool TFcheck;
+    [SerializeField] Strike_Counter strikes;
 
     public Color oldcolor;
 
@@ -33,6 +34,7 @@ public class Minigame_Click : MonoBehaviour
         }
         else
         {
+            strikes.StrikeCounter();
             img.color = Color.red;
         }
     }
