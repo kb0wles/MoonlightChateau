@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Minigame_Click : MonoBehaviour
 {
+    [SerializeField] bool TFcheck;
 
     public Color oldcolor;
 
@@ -26,6 +27,13 @@ public class Minigame_Click : MonoBehaviour
 
     public void ColorChange()
     {
-        img.color = Color.white;
+        if (TFcheck == true)
+        {
+            img.color = Color.green;
+        }
+        else
+        {
+            img.color = Color.red;
+        }
     }
 }
