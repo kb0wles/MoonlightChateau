@@ -16,12 +16,12 @@ public class winCondition : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // Destroy duplicate instances
+            Destroy(gameObject);
         }
         else
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: Persist across scene loads
+            DontDestroyOnLoad(gameObject);
         }
     }
 

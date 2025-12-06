@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class WinTestDriver : MonoBehaviour
+public class endingTester : MonoBehaviour
 {
     void Update()
     {
