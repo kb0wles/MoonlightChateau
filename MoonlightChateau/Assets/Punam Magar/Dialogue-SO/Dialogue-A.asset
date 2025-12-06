@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
+  m_Name: Dialogue-A
+  m_EditorClassIdentifier: 
+  dialogueText: "\u201CRohan\u2026 we need to talk. And this time, I want the truth.
+    No more half-answers.\u201D"
+  character: {fileID: 11400000, guid: a857ba9b5594d6b4abfd24cfa7274448, type: 2}
+  emotion: 5
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: 8f3547d79d6d82447a662dae5c5f5235, type: 2}

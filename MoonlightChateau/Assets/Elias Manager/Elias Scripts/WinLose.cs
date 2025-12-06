@@ -32,6 +32,7 @@ public class WinLose : MonoBehaviour
         if (strikes.GetStrikes() >= 3 && win.gameObject.activeSelf == false && lose.gameObject.activeSelf == false)
         {
             lose.gameObject.SetActive(true);
+            LoseManager.Instance.UpdateCounter();
         }
     }
 }
