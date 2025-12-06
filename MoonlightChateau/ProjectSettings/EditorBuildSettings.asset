@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Testing Scene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Punam Magar/PM-Scripts/Scenes/Punam-Scene.unity
+    guid: de297353e38790c43bf3b2c422513229
+  - enabled: 1
+    path: Assets/Punam Magar/PM-Scripts/Scenes/PM-LoseTest.unity
+    guid: 6be17afa452aaed4a92b23a6db6afa89
+  - enabled: 1
+    path: Assets/Punam Magar/PM-Scripts/Scenes/Lose-1.unity
+    guid: e045cb14074c20946b3cd092095c3bb8
+  - enabled: 1
+    path: Assets/Punam Magar/PM-Scripts/Scenes/Lose-2.unity
+    guid: b80cd2ebad34ec5439d20b8053c2f13c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
