@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
     [SerializeField] CharacterController controller;
 
 
-    [SerializeField] int sprintspeed;
+    [SerializeField] int sprintMod;
     [SerializeField] int speed;
     [SerializeField] int gravity;
 
@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Movement();
+        Sprint();
     }
 
     void Movement()
@@ -40,5 +41,15 @@ public class Player : MonoBehaviour
 
     }
 
-
+    void Sprint()
+    {
+        if(Input.GetButtonDown("Sprint"))
+        {
+            speed *= sprintMod;
+        }
+        else if (Input.GetButtonUp("Sprint"))
+        {
+            speed /= sprintMod;
+        }
+    }
 }

@@ -409,8 +409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   controller: {fileID: 748137707}
-  sprintspeed: 12
-  speed: 8
+  sprintMod: 2
+  speed: 6
   gravity: 10
 --- !u!1 &939291816
 GameObject:
