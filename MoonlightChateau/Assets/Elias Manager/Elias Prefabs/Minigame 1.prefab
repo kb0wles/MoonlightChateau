@@ -1128,7 +1128,7 @@ GameObject:
   - component: {fileID: 3038341539813767702}
   - component: {fileID: 3904646250936334213}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Minigame 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1724,6 +1724,14 @@ PrefabInstance:
       propertyPath: TFcheck
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: correct
+      value: 
+      objectReference: {fileID: 3904646250936334213}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: strikes
+      value: 
+      objectReference: {fileID: 3038341539813767702}
     - target: {fileID: 6265865140430337297, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
       propertyPath: m_Name
       value: Clicked (1)
@@ -1849,6 +1857,14 @@ PrefabInstance:
       propertyPath: TFcheck
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: correct
+      value: 
+      objectReference: {fileID: 3904646250936334213}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: strikes
+      value: 
+      objectReference: {fileID: 3038341539813767702}
     - target: {fileID: 6265865140430337297, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
       propertyPath: m_Name
       value: Clicked (2)
@@ -1974,6 +1990,14 @@ PrefabInstance:
       propertyPath: TFcheck
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: correct
+      value: 
+      objectReference: {fileID: 3904646250936334213}
+    - target: {fileID: 4530419242335962465, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
+      propertyPath: strikes
+      value: 
+      objectReference: {fileID: 3038341539813767702}
     - target: {fileID: 6265865140430337297, guid: f59f5c92c043ca74b80f5b0427b7aa0e, type: 3}
       propertyPath: m_Name
       value: Clicked

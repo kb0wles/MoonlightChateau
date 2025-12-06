@@ -7,6 +7,7 @@ public class Minigame_Click : MonoBehaviour
 {
     [SerializeField] bool TFcheck;
     [SerializeField] Strike_Counter strikes;
+    [SerializeField] WinLose correct;
 
     public Color oldcolor;
 
@@ -28,11 +29,12 @@ public class Minigame_Click : MonoBehaviour
 
     public void ColorChange()
     {
-        if (TFcheck == true)
+        if (TFcheck == true && img.color != Color.green && strikes.GetStrikes() != 3)
         {
             img.color = Color.green;
+            correct.wincount++;
         }
-        else
+        else if (TFcheck == false && img.color != Color.red && correct.wincount != 3)
         {
             strikes.StrikeCounter();
             img.color = Color.red;
