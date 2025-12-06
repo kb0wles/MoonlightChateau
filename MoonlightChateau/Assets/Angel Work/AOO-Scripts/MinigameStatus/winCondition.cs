@@ -6,6 +6,7 @@ public class winCondition : MonoBehaviour
     [SerializeField] bool wonAllGames = false;
     [SerializeField] string trueEnding; // place holder
     [SerializeField] string falseEnding; // place holder
+    [SerializeField] string endingChoiceSceneName; // place holder
 
     int winCounter = 0;
     int allGamesWon = 3;
@@ -30,7 +31,7 @@ public class winCondition : MonoBehaviour
         if (!wonAllGames)
             return;
 
-        SceneManager.LoadScene("EndingChoiceScene"); // Replace with the actual scene name
+        SceneManager.LoadScene(endingChoiceSceneName); // Replace with the actual scene name
     }
 
     public void WinCount()
