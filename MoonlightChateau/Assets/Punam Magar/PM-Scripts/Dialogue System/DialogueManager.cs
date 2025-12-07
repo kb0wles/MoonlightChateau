@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI nameTXT;
     [SerializeField] Image characterIMG;
 
+    [SerializeField] bool Isminigame2;
+
     DialogueNode currentDialougeNode;
     TextMeshProUGUI nextCloseTXT;
     Button nextCloseBTN;
@@ -35,12 +38,16 @@ public class DialogueManager : MonoBehaviour
         currentDialougeNode = startDialogueNode;
         nextCloseTXT = nextCloseGO.GetComponentInChildren<TextMeshProUGUI>();
         nextCloseBTN = nextCloseGO.GetComponent<Button>();
+        if (Isminigame2 == true)
+        {
+            DisplayDialogue(startDialogueNode);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isTyping == false)
+        if (Input.GetKeyDown(KeyCode.Space) && isTyping == false)
         {
             DisplayDialogue(startDialogueNode);
         }
