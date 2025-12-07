@@ -1,6 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Game Director that tells the entire game what to do next.
+/// 
+/// What it does:
+/// - Gets win/loss reports from the minigames
+/// - Gives the wins to winCondition script (Angel's), and losses to LoseManager script (Punam's)
+/// - Lets the winCondition and LoseManager choose what scenes to load
+/// </summary>
+/// <remarks>
+/// - Don't create extra GameManager instances on other scenes. This is a singleton class and uses DontDestroyOnLoad
+/// - Minigame calls the GameManager.Instance.Win() when the player wins, and GameManager.Instance.Lose() when the player loses.
+/// </remarks>
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;

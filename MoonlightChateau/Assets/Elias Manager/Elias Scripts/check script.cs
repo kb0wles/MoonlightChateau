@@ -26,7 +26,6 @@ public class CheckScript : MonoBehaviour
         if (Check.gameObject.activeSelf == false)
         {
             Check.gameObject.SetActive(true);
-            win.wincount++;
         }
     }
 }
