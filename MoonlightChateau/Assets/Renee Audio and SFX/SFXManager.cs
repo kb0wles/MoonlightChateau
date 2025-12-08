@@ -4,7 +4,7 @@ public class MenuSFXManager : MonoBehaviour
 {
     public static MenuSFXManager Instance;
 
-    AudioSource sfxSource;
+    public AudioSource sfxSource;
     public AudioSettingsSO settings;
 
     public AudioClip navigateSound;
