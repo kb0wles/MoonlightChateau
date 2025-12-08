@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Punam Magar/PM-Scripts/Scenes/Punam-Scene.unity
+    path: Assets/Punam Magar/PM-Scenes/Punam-Scene.unity
     guid: de297353e38790c43bf3b2c422513229
   - enabled: 1
-    path: Assets/Punam Magar/PM-Scripts/Scenes/PM-LoseTest.unity
+    path: Assets/Punam Magar/PM-Scenes/PM-LoseTest.unity
     guid: 6be17afa452aaed4a92b23a6db6afa89
   - enabled: 1
-    path: Assets/Punam Magar/PM-Scripts/Scenes/Lose-1.unity
+    path: Assets/Punam Magar/PM-Scenes/Lose-1.unity
     guid: e045cb14074c20946b3cd092095c3bb8
   - enabled: 1
-    path: Assets/Punam Magar/PM-Scripts/Scenes/Lose-2.unity
+    path: Assets/Punam Magar/PM-Scenes/Lose-2.unity
     guid: b80cd2ebad34ec5439d20b8053c2f13c
   - enabled: 1
     path: Assets/Scenes/UI Test Scene.unity
