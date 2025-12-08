@@ -37,6 +37,15 @@ public class Enemyai : MonoBehaviour
         {
             agent.SetDestination(furthestpoint.position);
         }
-
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            MinigameManger.Instance.Timerdeactivate();
+            MinigameManger.Instance.winpopup.SetActive(true);
+        }
+    }
+
 }
