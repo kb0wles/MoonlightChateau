@@ -1,7 +1,7 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -31,6 +31,8 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector]
     public bool isTyping = false;
 
+    bool isDialogueActive = false;
+
     Coroutine typeTextCoro;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -48,9 +50,11 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isTyping && Input.GetKeyDown(KeyCode.Space))
+        //Old Input Handling
+        if (!isTyping && !isDialogueActive && Input.GetKeyDown(KeyCode.Space))
         {
             DisplayDialogue(startDialogueNode);
+            isDialogueActive = true;
         }
 
         // Skip typing effect on mouse click
@@ -58,6 +62,17 @@ public class DialogueManager : MonoBehaviour
         {
             SkipTyping();
         }
+
+        ////New Input Handling
+        //if(Keyboard.current.spaceKey.wasPressedThisFrame && !isTyping)
+        //{
+        //    DisplayDialogue(startDialogueNode);
+        //}
+
+        //if (isTyping && Mouse.current.leftButton.wasPressedThisFrame)
+        //{
+        //    SkipTyping();
+        //}
     }
 
     public void DisplayDialogue(DialogueNode node)
@@ -133,6 +148,7 @@ public class DialogueManager : MonoBehaviour
     void OnClickClose() 
     {
         nextCloseBTN.onClick.RemoveAllListeners();
+        isDialogueActive = false;
         closeableGO.SetActive(false);
         nextCloseGO.SetActive(false);
     }
