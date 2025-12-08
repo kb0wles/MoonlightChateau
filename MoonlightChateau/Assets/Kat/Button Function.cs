@@ -1,16 +1,37 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonFunction : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void onStart()
     {
-        
+
+    }
+   
+    public void onChapter()
+    {
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void onSettings()
     {
-        
+
     }
+
+    public void onCredits()
+    {
+
+    }
+
+    public void onQuit()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
+
+
+
 }
