@@ -28,7 +28,8 @@ public class DialogueManager : MonoBehaviour
     TextMeshProUGUI nextCloseTXT;
     Button nextCloseBTN;
 
-    bool isTyping = false;
+    [HideInInspector]
+    public bool isTyping = false;
 
     Coroutine typeTextCoro;
 
@@ -47,12 +48,13 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isTyping == false)
+        if(!isTyping && Input.GetKeyDown(KeyCode.Space))
         {
             DisplayDialogue(startDialogueNode);
         }
 
-        if(isTyping && Input.GetKeyDown(KeyCode.Mouse0))
+        // Skip typing effect on mouse click
+        if (isTyping && Input.GetKeyDown(KeyCode.Mouse0))
         {
             SkipTyping();
         }
