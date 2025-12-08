@@ -315,13 +315,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 119807103945763551, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1162151590797053257, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3774589182564904181, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
+    - target: {fileID: 1991615156726226940, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -413,13 +409,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8893167503749125050, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: onOptions
-      objectReference: {fileID: 0}
     - target: {fileID: 9006235531070311942, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
