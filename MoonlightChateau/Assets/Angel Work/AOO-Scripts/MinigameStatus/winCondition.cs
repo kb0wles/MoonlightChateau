@@ -9,7 +9,7 @@ public class winCondition : MonoBehaviour
     [SerializeField] string endingChoiceSceneName; // place holder
 
     int winCounter = 0;
-    int allGamesWon = 3;
+    [SerializeField] int allGamesWon = 3;
 
     public static winCondition Instance;
 

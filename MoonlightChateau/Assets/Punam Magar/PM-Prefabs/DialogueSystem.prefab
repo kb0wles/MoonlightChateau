@@ -53,7 +53,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7700147070627457205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDialogueNode: {fileID: 11400000, guid: b6ba635257e25fb4cb3c22d738e7af51, type: 2}
+  endDialogueNode: {fileID: 0}
   choiceParent: {fileID: 2988644579542832601}
   nextCloseGO: {fileID: 5082973763786763462}
   closeableGO: {fileID: 519988970545580010}
@@ -416,6 +417,7 @@ MonoBehaviour:
   nameTXT: {fileID: 4876231184516492651}
   characterIMG: {fileID: 739694603860326794}
   Isminigame2: 0
+  currentDialougeNode: {fileID: 0}
   isTyping: 0
 --- !u!1 &2988644579542832601
 GameObject:

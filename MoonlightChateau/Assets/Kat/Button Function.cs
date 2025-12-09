@@ -17,6 +17,11 @@ public class ButtonFunction : MonoBehaviour
     {
        UIManager.instance.StateGameStart();
     }
+
+    public void PlayMainGame() 
+    {
+        SceneManager.LoadScene("MainGame-Alpha-Milestone");
+    }
    
     public void OnChapter()
     {
@@ -60,7 +65,7 @@ public class ButtonFunction : MonoBehaviour
     public void OnMG2()
     {
         UIManager.instance.StateMinigame();
-        SceneManager.LoadScene("Minigame 2 - E");
+        SceneManager.LoadScene("Minigame-Alpha-Milestone");
     }
 
     public void OnMG3()

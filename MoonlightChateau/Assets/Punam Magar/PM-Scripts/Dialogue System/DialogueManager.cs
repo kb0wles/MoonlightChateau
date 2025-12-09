@@ -6,7 +6,10 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] DialogueNode startDialogueNode;
+    public static DialogueManager Instance;
+
+    public DialogueNode startDialogueNode;
+    public DialogueNode endDialogueNode;
 
     [SerializeField] GameObject choiceParent;
 
@@ -24,7 +27,9 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] bool Isminigame2;
 
-    DialogueNode currentDialougeNode;
+    //[HideInInspector]
+    public DialogueNode currentDialougeNode;
+
     TextMeshProUGUI nextCloseTXT;
     Button nextCloseBTN;
 
@@ -34,6 +39,18 @@ public class DialogueManager : MonoBehaviour
     bool isDialogueActive = false;
 
     Coroutine typeTextCoro;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -151,6 +168,9 @@ public class DialogueManager : MonoBehaviour
         isDialogueActive = false;
         closeableGO.SetActive(false);
         nextCloseGO.SetActive(false);
+
+        // Notify GameManager that dialogue has ended
+        GameManager.Instance.CheckForDialogueEnd();
     }
 
     void SkipTyping() 
