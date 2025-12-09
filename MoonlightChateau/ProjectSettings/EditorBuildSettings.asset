@@ -20,18 +20,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/UI Test Scene.unity
     guid: 02f675ea86cdca34095ab9861c61ea63
-  - enabled: 0
-    path: Assets/Scenes/Minigame 1 Test scenes/Minigame 1 - E.unity
-    guid: e040faff09600f44bb040d810ebccefc
-  - enabled: 0
-    path: Assets/Scenes/Minigame 2 - E.unity
-    guid: c828471b12824a5469938f359044b255
-  - enabled: 0
-    path: Assets/Scenes/Minigame 3.unity
-    guid: 7b691eaab4ae32f499334bb79ae6d04a
   - enabled: 1
     path: Assets/Scenes/Alpha-Milestone/Main-Menu-Alpha-Milestone.unity
     guid: 8e1c70b5732551648a39e99cede06d6d
+  - enabled: 1
+    path: Assets/Scenes/Minigame 3.unity
+    guid: 7b691eaab4ae32f499334bb79ae6d04a
+  - enabled: 1
+    path: Assets/Scenes/Minigame 1 Test scenes/Minigame 1 - E.unity
+    guid: e040faff09600f44bb040d810ebccefc
+  - enabled: 1
+    path: Assets/Scenes/Minigame 2 - E.unity
+    guid: c828471b12824a5469938f359044b255
   - enabled: 1
     path: Assets/Scenes/Alpha-Milestone/MainGame-Alpha-Milestone.unity
     guid: 08192f7ab80c4af449476c8e7c933643
