@@ -1,9 +1,8 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
+    #region Fields
     public static UIManager instance;
     //UI containers
     //all containers will be active by default
@@ -19,14 +18,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuNotes;
 
-
     public bool isPaused;
-    float timeScaleOrig;
+    #endregion
 
+    #region Lifecycle
     private void Awake()
     {
         instance = this;
-        timeScaleOrig = Time.timeScale;
 
         if (SceneManager.GetActiveScene().name == "UI Test Scene")
         {
@@ -36,9 +34,9 @@ public class UIManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Minigame 1 - E" ||
             SceneManager.GetActiveScene().name == "Minigame 2 - E" ||
-            SceneManager.GetActiveScene().name == "Minigame 1 - E")
+            SceneManager.GetActiveScene().name == "Minigame 3")
         {
-            stateMinigame();
+            StateMinigame();
         }
     }
     void Start()
@@ -48,66 +46,82 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetButtonDown("Cancel"))
         {
-            if (menuActive == null)
+            if (SceneManager.GetActiveScene().name != "UI Test Scene")
             {
-                statePause();
-                menuActive = menuPause;
-                menuActive.SetActive(true);
-            }
-            else if (menuActive == menuPause)
-            {
-                stateUnpause();
+                if (menuActive == null)
+                {
+                    StatePause();
+                }
+                else if (menuActive == menuPause)
+                {
+                    StateUnpause();
+                }
             }
         }
     }
-    public void statePause()
-    {
-        isPaused = true;
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
+    #endregion
 
-    }
-    public void stateUnpause()
-    {
-        isPaused = false;
-        Time.timeScale = 1.0f;
-        Cursor.lockState = CursorLockMode.Locked;
-        menuActive.SetActive(false);
-        menuActive = null;
-    }
-    public void stateGameStart()
+    #region Game States
+    public void StateGameStart()
     {
         titleUI.SetActive(false);
     }
-    public void stateChapter()
-    {
-
-        menuActive = menuChapter;
-        menuActive.SetActive(true);
-    }
-    public void stateOptions()
-    {
-
-        menuActive = menuOptions;
-        menuActive.SetActive(true);
-    }
-    public void stateCredits()
-    {
-        menuActive = menuCredits;
-        menuActive.SetActive(true);
-    }
-    public void stateMinigame()
+    public void StateMinigame()
     {
         gameUI.SetActive(false);
         titleUI.SetActive(false);
         menuUI.SetActive(true);
     }
+    #endregion
 
-    public void closeMenu()
-    {
-            menuActive.SetActive(false);
-            menuActive = null;
+    #region Menu States
+    public void StatePause()
+    { 
+        isPaused = true;
+        Time.timeScale = 0;
+        menuActive = menuPause;
+        menuActive.SetActive(true);
     }
+    public void StateUnpause()
+    {
+        isPaused = false;
+        Time.timeScale = 1.0f;
+        menuActive.SetActive(false);
+        menuActive = null;
+    }
+    public void StateChapter()
+    {
+
+        menuActive = menuChapter;
+        menuActive.SetActive(true);
+    }
+    public void StateOptions()
+    {
+        menuActive = menuOptions;
+        menuActive.SetActive(true);
+    }
+    public void StateCredits()
+    {
+        menuActive = menuCredits;
+        menuActive.SetActive(true);
+    }
+
+    public void StateNotes()
+    {
+        menuActive = menuNotes;
+        menuActive.SetActive(true);
+    }
+    public void CloseMenu()
+    {
+        menuActive.SetActive(false);
+        menuActive = null;
+        if (menuPause.activeSelf == true)
+        {
+            menuActive = menuPause;
+        }
+    }
+    #endregion
 }

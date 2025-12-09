@@ -1,11 +1,10 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ButtonFunction : MonoBehaviour
 {
     #region Title UI Buttons
-    public void onQuit()
+    public void OnQuit()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
@@ -14,40 +13,60 @@ public class ButtonFunction : MonoBehaviour
 #endif
     }
 
-    public void onStart()
+    public void OnStart()
     {
-       UIManager.instance.stateGameStart();
+       UIManager.instance.StateGameStart();
     }
    
-    public void onChapter()
+    public void OnChapter()
     {
-       UIManager.instance.stateChapter();
+       UIManager.instance.StateChapter();
     }
 
-    public void onOptions()
+    public void OnOptions()
     {
-        UIManager.instance.stateOptions();
+        UIManager.instance.StateOptions();
     }
 
-    public void onCredits()
+    public void OnCredits()
     {
-        UIManager.instance.stateCredits();
+        UIManager.instance.StateCredits();
     }
     #endregion
 
     #region Menu UI Buttons
-    public void onBack()
+    public void OnBack()
     {
-        UIManager.instance.closeMenu();
+        UIManager.instance.CloseMenu();
     }
-    public void onResume()
+    public void OnMenu()
     {
-        UIManager.instance.stateUnpause();
+        UIManager.instance.StatePause();
     }
-    public void onMG1()
+    public void OnNotes()
     {
-        UIManager.instance.stateMinigame();
+        UIManager.instance.StateNotes();
+    }
+    public void OnResume()
+    {
+        UIManager.instance.StateUnpause();
+    }
+    public void OnMG1()
+    {
+        UIManager.instance.StateMinigame();
         SceneManager.LoadScene("Minigame 1 - E");
+    }
+
+    public void OnMG2()
+    {
+        UIManager.instance.StateMinigame();
+        SceneManager.LoadScene("Minigame 2 - E");
+    }
+
+    public void OnMG3()
+    {
+        UIManager.instance.StateMinigame();
+        SceneManager.LoadScene("Minigame 3");
     }
 
     #endregion
