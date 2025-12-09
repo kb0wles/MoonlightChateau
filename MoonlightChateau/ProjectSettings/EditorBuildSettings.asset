@@ -17,6 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Punam Magar/PM-Scenes/Lose-2.unity
     guid: b80cd2ebad34ec5439d20b8053c2f13c
+  - enabled: 1
+    path: Assets/Scenes/UI Test Scene.unity
+    guid: 02f675ea86cdca34095ab9861c61ea63
+  - enabled: 1
+    path: Assets/Scenes/Minigame 1 Test scenes/Minigame 1 - E.unity
+    guid: e040faff09600f44bb040d810ebccefc
+  - enabled: 1
+    path: Assets/Scenes/Minigame 2 - E.unity
+    guid: c828471b12824a5469938f359044b255
+  - enabled: 1
+    path: Assets/Scenes/Minigame 3.unity
+    guid: 7b691eaab4ae32f499334bb79ae6d04a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

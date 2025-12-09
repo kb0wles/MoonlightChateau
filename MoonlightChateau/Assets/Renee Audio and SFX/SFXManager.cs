@@ -19,6 +19,11 @@ public class MenuSFXManager : MonoBehaviour
         if (settings == null) settings = Resources.Load<AudioSettingsSO>("AudioSettings");
     }
 
+    private void Start()
+    {
+        DontDestroyOnLoad (gameObject);
+    }
+
     void Update()
     {
         if (settings != null) sfxSource.volume = settings.masterVolume * settings.sfxVolume;
