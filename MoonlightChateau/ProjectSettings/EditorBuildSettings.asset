@@ -5,28 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Punam Magar/PM-Scenes/Punam-Scene.unity
     guid: de297353e38790c43bf3b2c422513229
-  - enabled: 1
+  - enabled: 0
     path: Assets/Punam Magar/PM-Scenes/PM-LoseTest.unity
     guid: 6be17afa452aaed4a92b23a6db6afa89
-  - enabled: 1
+  - enabled: 0
     path: Assets/Punam Magar/PM-Scenes/Lose-1.unity
     guid: e045cb14074c20946b3cd092095c3bb8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Punam Magar/PM-Scenes/Lose-2.unity
     guid: b80cd2ebad34ec5439d20b8053c2f13c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/UI Test Scene.unity
     guid: 02f675ea86cdca34095ab9861c61ea63
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Minigame 1 Test scenes/Minigame 1 - E.unity
     guid: e040faff09600f44bb040d810ebccefc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Minigame 2 - E.unity
     guid: c828471b12824a5469938f359044b255
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Minigame 3.unity
     guid: 7b691eaab4ae32f499334bb79ae6d04a
   - enabled: 1
