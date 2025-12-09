@@ -1,5 +1,7 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /// <summary>
 /// Game Director that tells the entire game what to do next.
@@ -17,6 +19,14 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    public static event System.Action OnCanPlayEnding;
+    public static event System.Action OnDialogueEnd;
+
+    [SerializeField] GameObject changeScenesBTN;
+
+    [SerializeField] int maxNumOfMinigames = 3;
+    public int currentMinigameIndex = 0;
 
     private void Awake()
     {
@@ -38,9 +48,12 @@ public class GameManager : MonoBehaviour
         if(winCondition.Instance != null)
         {
             winCondition.Instance.WinCount();
+            currentMinigameIndex++;
         }
 
-        winCondition.Instance.ChooseEndings();
+        CheckCanPlayEnding();
+
+        //winCondition.Instance.ChooseEndings();
     }
 
     // Tracks loses and takes you to the corresponding ending
@@ -50,8 +63,40 @@ public class GameManager : MonoBehaviour
         if (LoseManager.Instance != null)
         {
             LoseManager.Instance.UpdateCounter();
+            currentMinigameIndex++;
         }
 
-        LoseManager.Instance.PlayEndings();
+        CheckCanPlayEnding();
+
+        //LoseManager.Instance.PlayEndings();
+    }
+    public void PlayEnding() 
+    {
+        if(LoseManager.Instance.loseCount != 0)
+        {
+            LoseManager.Instance.PlayEndings();
+        }
+        else 
+        {
+            winCondition.Instance.ChooseEndings();
+        }
+    }
+
+    public void CheckForDialogueEnd() 
+    {
+        DialogueManager dialogueManager = DialogueManager.Instance;
+
+        if (dialogueManager.currentDialougeNode == dialogueManager.endDialogueNode) 
+        {
+            OnDialogueEnd?.Invoke();
+        }
+    }
+
+    public void CheckCanPlayEnding()
+    {
+        if(currentMinigameIndex >= maxNumOfMinigames) 
+        {
+            OnCanPlayEnding?.Invoke();
+        }
     }
 }

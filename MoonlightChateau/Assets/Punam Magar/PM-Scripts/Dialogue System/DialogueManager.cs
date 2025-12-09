@@ -1,12 +1,15 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] DialogueNode startDialogueNode;
+    public static DialogueManager Instance;
+
+    public DialogueNode startDialogueNode;
+    public DialogueNode endDialogueNode;
 
     [SerializeField] GameObject choiceParent;
 
@@ -24,13 +27,30 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] bool Isminigame2;
 
-    DialogueNode currentDialougeNode;
+    //[HideInInspector]
+    public DialogueNode currentDialougeNode;
+
     TextMeshProUGUI nextCloseTXT;
     Button nextCloseBTN;
 
-    bool isTyping = false;
+    [HideInInspector]
+    public bool isTyping = false;
+
+    bool isDialogueActive = false;
 
     Coroutine typeTextCoro;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,15 +67,29 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isTyping == false)
+        //Old Input Handling
+        if (!isTyping && !isDialogueActive && Input.GetKeyDown(KeyCode.Space))
         {
             DisplayDialogue(startDialogueNode);
+            isDialogueActive = true;
         }
 
-        if(isTyping && Input.GetKeyDown(KeyCode.Mouse0))
+        // Skip typing effect on mouse click
+        if (isTyping && Input.GetKeyDown(KeyCode.Mouse0))
         {
             SkipTyping();
         }
+
+        ////New Input Handling
+        //if(Keyboard.current.spaceKey.wasPressedThisFrame && !isTyping)
+        //{
+        //    DisplayDialogue(startDialogueNode);
+        //}
+
+        //if (isTyping && Mouse.current.leftButton.wasPressedThisFrame)
+        //{
+        //    SkipTyping();
+        //}
     }
 
     public void DisplayDialogue(DialogueNode node)
@@ -131,8 +165,12 @@ public class DialogueManager : MonoBehaviour
     void OnClickClose() 
     {
         nextCloseBTN.onClick.RemoveAllListeners();
+        isDialogueActive = false;
         closeableGO.SetActive(false);
         nextCloseGO.SetActive(false);
+
+        // Notify GameManager that dialogue has ended
+        GameManager.Instance.CheckForDialogueEnd();
     }
 
     void SkipTyping() 

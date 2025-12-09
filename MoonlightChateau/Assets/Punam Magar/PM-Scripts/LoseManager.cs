@@ -12,7 +12,7 @@ public class LoseManager : MonoBehaviour
     [SerializeField] string badEnding_Name;
     [SerializeField] string getAwayEnding_Name;
     
-    int loseCount;
+    public int loseCount;
 
     private void Awake()
     {
