@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 public class Choice : MonoBehaviour
 {
     int correct = 2;
-
+    public int choiceID;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,8 +17,9 @@ public class Choice : MonoBehaviour
         
     }
 
-    public void Yes()
+    public void ClickYes()
     {
+        FinalChoice.Instance.SetSuspect(choiceID);
         int check = FinalChoice.Instance.getSuspectnum();
         Debug.Log(check);
         if (check == correct)
@@ -29,5 +30,10 @@ public class Choice : MonoBehaviour
         {
             // load mistake ending
         }
+    }
+
+    public void ClickNo()
+    {
+        FinalChoice.Instance.TurnOffChoice();
     }
 }

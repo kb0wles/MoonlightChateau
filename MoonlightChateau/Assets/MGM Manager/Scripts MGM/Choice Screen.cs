@@ -21,10 +21,19 @@ public class FinalChoice : MonoBehaviour
         Debug.Log(suspectNum);
     }
 
+    public void TurnOffChoice()
+    {
+        img.SetActive(false);
+    }
+
     public int getSuspectnum()
     {
         return suspectNum;
     }
 
+    public void SetSuspect(int num)
+    {
+        suspectNum = num;
+    }
 
 }
