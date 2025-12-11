@@ -17,4 +17,12 @@ public class DialogueNode : ScriptableObject
     }
 
     public List<Choice> choices;
+
+    public bool hasNotepadSummary = false;
+
+    [TextArea(3, 6)]
+    public string notepadSummary;
+
+    public string GetSummaryNote() => notepadSummary;
 }
+
