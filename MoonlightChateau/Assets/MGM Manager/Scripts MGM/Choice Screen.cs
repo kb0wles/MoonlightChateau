@@ -6,8 +6,15 @@ using UnityEngine.UI;
 public class FinalChoice : MonoBehaviour
 {
     [SerializeField] GameObject img;
-    [SerializeField] int suspectNum; 
+    [SerializeField] int suspectNum;
 
+    public static FinalChoice Instance;
+
+
+    void Awake()
+    {
+        Instance = this;
+    }
     public void ConfirmChoice()
     {
         img.SetActive(true);
