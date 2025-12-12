@@ -17,3 +17,5 @@ MonoBehaviour:
   character: {fileID: 11400000, guid: e35478651fa384d40bda13f9ed5e5bce, type: 2}
   emotion: 3
   choices: []
+  hasNotepadSummary: 1
+  notepadSummary: D

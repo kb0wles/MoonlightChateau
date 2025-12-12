@@ -1,5 +1,4 @@
 using UnityEditor;
-using UnityEngine;
 
 [CustomEditor(typeof(DialogueNode))]
 public class DialogueNodeEditor : Editor

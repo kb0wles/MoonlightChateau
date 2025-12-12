@@ -21,8 +21,8 @@ public class DialogueNode : ScriptableObject
     public bool hasNotepadSummary = false;
 
     [TextArea(3, 6)]
-    public string notepadSummary;
-
+    [SerializeField] private string notepadSummary;
     public string GetSummaryNote() => notepadSummary;
+
 }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -78,6 +79,7 @@ public class DialogueManager : MonoBehaviour
         if (isTyping && Input.GetKeyDown(KeyCode.Mouse0))
         {
             SkipTyping();
+            CheckForSummuryNote(currentDialougeNode);
         }
 
         ////New Input Handling
@@ -115,7 +117,22 @@ public class DialogueManager : MonoBehaviour
         }
         isTyping = false;
 
+        CheckForSummuryNote(node);
         AddChoices(node);
+    }
+
+    void CheckForSummuryNote(DialogueNode node) 
+    {
+        // Add notepad summary if available
+        if (node.hasNotepadSummary)
+        {
+            if (NotepadManager.Instance == null) 
+            {
+                return;
+            }
+
+            NotepadManager.Instance.AddSummaryNote();
+        }
     }
 
     void AddChoices(DialogueNode node) 
