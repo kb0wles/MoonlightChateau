@@ -19,24 +19,31 @@ public class Enemyai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Transform furthestpoint = null;
-        float furthestdistance = 0f;
-
-        foreach (Transform point in setpoints)
+        if(MinigameManger.Instance.getGameStatus())
         {
-            float DistanceFromPlayer = Vector3.Distance(player.position, point.position);
+            agent.isStopped = false;
 
-            if(DistanceFromPlayer > furthestdistance)
+            Transform furthestpoint = null;
+            float furthestdistance = 0f;
+
+            foreach (Transform point in setpoints)
             {
-                furthestpoint = point;
-                furthestdistance = DistanceFromPlayer;
+                float DistanceFromPlayer = Vector3.Distance(player.position, point.position);
+
+                if(DistanceFromPlayer > furthestdistance)
+                {
+                    furthestpoint = point;
+                    furthestdistance = DistanceFromPlayer;
+                }
+            }
+
+            if (furthestpoint != null)
+            {
+                agent.SetDestination(furthestpoint.position);
             }
         }
+        else agent.isStopped = true;
 
-        if (furthestpoint != null)
-        {
-            agent.SetDestination(furthestpoint.position);
-        }
     }
 
     private void OnTriggerEnter(Collider other)
