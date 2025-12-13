@@ -10,30 +10,33 @@ public class Strike_Counter : MonoBehaviour
     private Image img;
     [SerializeField] Sprite newSprite;
     int strikepos;
-
-    int strikes = 0;
+    [SerializeField] int strikes;
+    bool gameover;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void StrikeCounter()
     {
-        strikes++;
-        Debug.Log(strikes);
-        changestrike();
+        if (!gameover)
+        {
+            changestrike();
+            Debug.Log(strikes);
+        }
     }
 
     void changestrike()
     {
+        strikes++;
         if (strikes == 1)
         {
             img = stikes[strikepos];
@@ -57,4 +60,10 @@ public class Strike_Counter : MonoBehaviour
     {
         return strikes;
     }
+
+    public void OnGameOver()
+    {
+        gameover = true;
+    }
+
 }
