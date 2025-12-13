@@ -482,7 +482,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -497,7 +497,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2579,6 +2579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDialogueNode: {fileID: 11400000, guid: b6ba635257e25fb4cb3c22d738e7af51, type: 2}
+  endDialogueNode: {fileID: 0}
   choiceParent: {fileID: 7453061198454939138}
   nextCloseGO: {fileID: 620655003799430941}
   closeableGO: {fileID: 5269217008579693617}
@@ -2587,6 +2588,7 @@ MonoBehaviour:
   nameTXT: {fileID: 989808578135254704}
   characterIMG: {fileID: 4923762154575065681}
   Isminigame2: 0
+  currentDialougeNode: {fileID: 0}
   isTyping: 0
 --- !u!1 &1441372642469402149
 GameObject:
