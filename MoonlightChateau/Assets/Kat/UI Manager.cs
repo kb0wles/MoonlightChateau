@@ -76,7 +76,7 @@ public class UIManager : MonoBehaviour
         menuUI.SetActive(true);
     }
     #endregion
-
+                
     #region Menu States
     public void StatePause()
     { 

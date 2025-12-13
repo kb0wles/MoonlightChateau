@@ -5,13 +5,15 @@ public class Player : MonoBehaviour
 {
     [SerializeField] CharacterController controller;
 
-
     [SerializeField] int sprintMod;
     [SerializeField] int speed;
     [SerializeField] int gravity;
 
+
     Vector3 moveDirection;
     Vector3 playerVelocity;
+
+    [SerializeField] float turnspeed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
     {
         Movement();
         Sprint();
+        Turn();
     }
 
     void Movement()
@@ -35,7 +38,7 @@ public class Player : MonoBehaviour
         {
             playerVelocity.y = gravity * Time.deltaTime;
         }
-        moveDirection = Input.GetAxis("Horizontal") * transform.right + Input.GetAxis("Vertical") * transform.forward;
+        moveDirection = /*Input.GetAxis("Horizontal") * transform.right +*/ Input.GetAxis("Vertical") * transform.forward;
         controller.Move(moveDirection * speed * Time.deltaTime);
         controller.Move(playerVelocity * Time.deltaTime);
 
@@ -52,4 +55,11 @@ public class Player : MonoBehaviour
             speed /= sprintMod;
         }
     }
+
+    void Turn()
+    {
+        float turn = Input.GetAxis("Horizontal") * turnspeed * Time.deltaTime;
+        transform.Rotate(0f, turn, 0f);
+    }
+
 }
