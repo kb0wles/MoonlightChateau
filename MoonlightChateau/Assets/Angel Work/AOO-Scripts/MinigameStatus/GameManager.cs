@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] int maxNumOfMinigames = 3;
     public int currentMinigameIndex = 0;
 
+    [HideInInspector]
+    public int dialogueEndCount = 0;
+    int numOfCharsInScene;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -82,21 +86,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void CheckForDialogueEnd() 
-    {
-        DialogueManager dialogueManager = DialogueManager.Instance;
-
-        if (dialogueManager.currentDialougeNode == dialogueManager.endDialogueNode) 
-        {
-            OnDialogueEnd?.Invoke();
-        }
-    }
-
     public void CheckCanPlayEnding()
     {
         if(currentMinigameIndex >= maxNumOfMinigames) 
         {
             OnCanPlayEnding?.Invoke();
+        }
+    }
+
+    public void UpdateCharacterInScene(int numOfChars) 
+    {
+        numOfCharsInScene += numOfChars;
+    }
+
+    public void HasAllDialgueEnded() 
+    {
+        if(dialogueEndCount >= numOfCharsInScene) 
+        {
+            OnDialogueEnd?.Invoke();
         }
     }
 }

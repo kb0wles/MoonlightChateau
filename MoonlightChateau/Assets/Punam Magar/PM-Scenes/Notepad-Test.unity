@@ -2531,7 +2531,7 @@ MonoBehaviour:
   menuOptions: {fileID: 1000909496}
   menuCredits: {fileID: 1430038526}
   menuPause: {fileID: 431345292}
-  menuNotes: {fileID: 1268828052}
+  menuNotes: {fileID: 1334629297}
   isPaused: 0
 --- !u!1 &503385002
 GameObject:
@@ -5940,11 +5940,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264801702}
   m_CullTransparentMesh: 1
---- !u!1 &1268828052 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9163241697969263411, guid: 2d0a9e899f93111408922781a7c33149, type: 3}
-  m_PrefabInstance: {fileID: 45606272279551628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1268828053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7928170449757553334, guid: 2d0a9e899f93111408922781a7c33149, type: 3}
@@ -6101,6 +6096,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328350705}
   m_CullTransparentMesh: 1
+--- !u!1 &1334629297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7025180771591676920, guid: 2d0a9e899f93111408922781a7c33149, type: 3}
+  m_PrefabInstance: {fileID: 45606272279551628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1341250618
 GameObject:
   m_ObjectHideFlags: 0
