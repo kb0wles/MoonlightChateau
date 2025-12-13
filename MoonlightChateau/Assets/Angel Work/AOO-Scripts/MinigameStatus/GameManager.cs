@@ -106,4 +106,20 @@ public class GameManager : MonoBehaviour
             OnDialogueEnd?.Invoke();
         }
     }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += ResetDialogueVariables;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= ResetDialogueVariables;
+    }
+
+    public void ResetDialogueVariables(Scene scene, LoadSceneMode mode) 
+    {
+        dialogueEndCount = 0;
+        numOfCharsInScene = 0;
+    }
 }

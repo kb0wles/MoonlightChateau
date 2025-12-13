@@ -220,6 +220,8 @@ public class DialogueManager : MonoBehaviour
 
         startDialogueNode = charDlgProfile.GetStartNode();
         endDialogueNode = charDlgProfile.GetEndNode();
+
+        currentDialougeNode = startDialogueNode;
     }
 
     public void CheckForDialogueEnd()

@@ -5480,8 +5480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f795e53f6a1335f4a96ddcc39aa07219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogueProfile
-  startNode: {fileID: 11400000, guid: b6ba635257e25fb4cb3c22d738e7af51, type: 2}
-  endNode: {fileID: 11400000, guid: f8e8cbab853749c43bf4e815da9e89ba, type: 2}
+  startNode: {fileID: 11400000, guid: 7a79401ff828eee478ba04eb35401517, type: 2}
+  endNode: {fileID: 11400000, guid: 6d9563f09106ae74396ea47b987ef324, type: 2}
   loopNode: {fileID: 11400000, guid: dcffdaf4413fda444b12dc51d220df33, type: 2}
 --- !u!1 &818211124
 GameObject:
@@ -8155,6 +8155,7 @@ MonoBehaviour:
   changeScenesBTN: {fileID: 0}
   maxNumOfMinigames: 1
   currentMinigameIndex: 0
+  dialogueEndCount: 0
 --- !u!4 &1209903156
 Transform:
   m_ObjectHideFlags: 0
@@ -10331,8 +10332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f795e53f6a1335f4a96ddcc39aa07219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogueProfile
-  startNode: {fileID: 11400000, guid: d46c53deb3ed3b944947084f9726aa93, type: 2}
-  endNode: {fileID: 11400000, guid: 6fbdf84458ff75d45a9fc508d50c2bdc, type: 2}
+  startNode: {fileID: 11400000, guid: 0aaa8fcae300b08438bf023a9a01f261, type: 2}
+  endNode: {fileID: 11400000, guid: 512b84f5310629d4d9dfda4be9d320fa, type: 2}
   loopNode: {fileID: 11400000, guid: 63222b87f84841246974f5be6a41158c, type: 2}
 --- !u!1 &1848243269
 GameObject:
