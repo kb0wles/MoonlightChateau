@@ -10073,6 +10073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: A1 - Bear
       objectReference: {fileID: 0}
+    - target: {fileID: 7468554397859441920, guid: 99c86ec138d885f4b960fdcbb2c7e416, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
