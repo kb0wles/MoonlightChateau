@@ -16,13 +16,13 @@ public class Strike_Counter : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void StrikeCounter()
@@ -36,6 +36,8 @@ public class Strike_Counter : MonoBehaviour
 
     void changestrike()
     {
+        if (Time.timeScale == 0) return; //if paused ignore clicks -kb 
+
         strikes++;
         if (strikes == 1)
         {
