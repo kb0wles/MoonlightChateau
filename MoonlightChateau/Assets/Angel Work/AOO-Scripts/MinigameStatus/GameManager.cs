@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
         if(dialogueEndCount >= numOfCharsInScene) 
         {
             OnDialogueEnd?.Invoke();
+
         }
     }
 
