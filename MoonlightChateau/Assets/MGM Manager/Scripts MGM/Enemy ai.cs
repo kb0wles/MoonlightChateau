@@ -5,6 +5,8 @@ public class Enemyai : MonoBehaviour
 {
     [SerializeField] Transform player;
     [SerializeField] NavMeshAgent agent;
+
+    MeshRenderer rend;
     public Transform[] setpoints;
 
     [SerializeField] float checkinterval;
@@ -13,7 +15,9 @@ public class Enemyai : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rend = GetComponent<MeshRenderer>();
+        rend.enabled = false;
+        //rend.enabled = true;
     }
 
     // Update is called once per frame
@@ -52,6 +56,20 @@ public class Enemyai : MonoBehaviour
         {
             MinigameManger.Instance.Timerdeactivate();
             MinigameManger.Instance.winpopup.SetActive(true);
+        }
+
+        if(other.CompareTag("Flashlight"))
+        {
+            rend.enabled = true;
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Flashlight"))
+        {
+            rend.enabled = false;
         }
     }
 
