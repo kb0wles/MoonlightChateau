@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
+  m_Name: NE - C-2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  dialogueText: Hm, Looks we have a solid amount of evidence. But still not enough
+    to convict anyone.
+  character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
+  emotion: 0
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: 6394dd2f10ad00e40a7f77bf8b1077c0, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

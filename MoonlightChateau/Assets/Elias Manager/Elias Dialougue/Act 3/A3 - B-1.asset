@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
-  m_Name: A1 - C-8
+  m_Name: A3 - B-1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: 
-  character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
+  dialogueText: "Once we get out of here, I\u2019m definitely going home to relax
+    by my pool."
+  character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
   emotion: 0
   choices:
   - choiceLabel: 
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: a3cb5ef29599cd745911f4733c1f55f9, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

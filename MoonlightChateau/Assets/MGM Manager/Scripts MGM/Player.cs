@@ -23,9 +23,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        Sprint();
-        Turn();
+        if(MinigameManger.Instance.getGameStatus())
+        {
+            Movement();
+            Sprint();
+            Turn();
+        }
     }
 
     void Movement()

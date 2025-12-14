@@ -38,6 +38,8 @@ public class MinigameManger : MonoBehaviour
             else if (startTime <= 0)
             {
                 startTime = 0;
+                timeractive = false;
+                losepopup.SetActive(true);
             }
         }
         
@@ -50,6 +52,9 @@ public class MinigameManger : MonoBehaviour
         timeractive = false;
     }
 
-
+    public bool getGameStatus()
+    {
+        return timeractive;
+    }
 
 }
