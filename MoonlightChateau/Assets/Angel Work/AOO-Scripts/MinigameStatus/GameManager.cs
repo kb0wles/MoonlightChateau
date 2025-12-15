@@ -57,6 +57,9 @@ public class GameManager : MonoBehaviour
 
         CheckCanPlayEnding();
 
+        // Play Fide Transition and go to next scene
+        FadeTransition.Instance.GoToNextScene();
+
         //winCondition.Instance.ChooseEndings();
     }
 
@@ -71,6 +74,9 @@ public class GameManager : MonoBehaviour
         }
 
         CheckCanPlayEnding();
+
+        // Play Fide Transition and go to next scene
+        FadeTransition.Instance.GoToNextScene();
 
         //LoseManager.Instance.PlayEndings();
     }
@@ -104,7 +110,9 @@ public class GameManager : MonoBehaviour
         if(dialogueEndCount >= numOfCharsInScene) 
         {
             OnDialogueEnd?.Invoke();
-
+            //ManagerScene.Instance.PlayNextScene();
+            // Play Fide Transition and go to next scene
+            FadeTransition.Instance.GoToNextScene();
         }
     }
 

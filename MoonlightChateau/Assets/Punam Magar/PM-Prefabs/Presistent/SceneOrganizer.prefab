@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479b5f0bb508f08428cad7e166af5275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManagerScene
-  ACT_1: ACT_1
-  ACT_2: Lose-1
-  ACT_3: 
-  MINIGAME_1: MiniGame_1
-  MINIGAME_2: 
-  MINIGAME_3: 
-  MINIGAME_4: 
+  ACT_1: Beta_ACT-1
+  ACT_2: Beta_ACT-2
+  ACT_3: Beta_ACT-3
+  MINIGAME_1: Beta_MiniGame_1
+  MINIGAME_2: Beta_MiniGame_2
+  MINIGAME_3: Beta_MiniGame_3
+  MINIGAME_4: Beta_MiniGame_4

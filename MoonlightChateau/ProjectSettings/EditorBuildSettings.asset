@@ -6,14 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Punam Magar/PM-Scenes/ACT_1.unity
-    guid: f8b3b8170813b51439b5e70342ab2306
+    path: Assets/Scenes/Beta-Milestone/Beta_MainMenu.unity
+    guid: aa421604d62140e448d74b024a6d64d2
   - enabled: 1
-    path: Assets/Punam Magar/PM-Scenes/MiniGame_1.unity
-    guid: 6810235f52b001440a58221ba230f2ca
+    path: Assets/Scenes/Beta-Milestone/Beta_ACT-1.unity
+    guid: d99f9d14bac99a34b9974f2e903e0e6e
   - enabled: 1
-    path: Assets/Punam Magar/PM-Scenes/Lose-1.unity
-    guid: e045cb14074c20946b3cd092095c3bb8
+    path: Assets/Scenes/Beta-Milestone/Beta_ACT-2.unity
+    guid: 5ecd87c672bd85c47ba189bf7a49d9bc
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_ACT-3.unity
+    guid: 19b109572789f9d4ba0bd0c45ae28aa3
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_MiniGame_1.unity
+    guid: a8913d1dfac1ff4449a44f1bbb79936c
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_MiniGame_2.unity
+    guid: 64d740f910467fc4288d6f6e688c01cb
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_MiniGame_3.unity
+    guid: f11f00adf52b27f4ebaa0dcedff87d00
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

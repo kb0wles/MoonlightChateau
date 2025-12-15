@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 public class MinigameManger : MonoBehaviour
 {
 
@@ -13,6 +14,9 @@ public class MinigameManger : MonoBehaviour
     public GameObject winpopup;
     public GameObject losepopup;
 
+    [SerializeField] GameObject toturialGO;
+    [SerializeField] float toturialTime = 5f;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -21,10 +25,24 @@ public class MinigameManger : MonoBehaviour
         timeractive = true;
     }
 
+    private void Start()
+    {
+        StartCoroutine(ShowToturial());
+    }
+
     // Update is called once per frame
     void Update()
     {
         Timer();
+    }
+
+    IEnumerator ShowToturial()
+    {
+        toturialGO.SetActive(true);
+
+        yield return new WaitForSeconds(toturialTime);
+
+        toturialGO.SetActive(false);
     }
 
     void Timer()
@@ -40,6 +58,7 @@ public class MinigameManger : MonoBehaviour
                 startTime = 0;
                 timeractive = false;
                 losepopup.SetActive(true);
+                GameManager.Instance.Lose();
             }
         }
         
