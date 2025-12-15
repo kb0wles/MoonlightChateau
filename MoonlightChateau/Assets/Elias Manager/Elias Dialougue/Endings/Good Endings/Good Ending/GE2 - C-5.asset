@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: GE2 - C-5
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: And great work, detective. Without you, this crime might never have
-    been solved.
+  dialogueText: "We\u2019ll see what the judge has in store for you. I imagine it
+    won't be pretty."
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
   emotion: 0
-  choices: []
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: 0e6c147b886bc1240b8660d8e1a409e6, type: 2}
   hasNotepadSummary: 0
   notepadSummary: 

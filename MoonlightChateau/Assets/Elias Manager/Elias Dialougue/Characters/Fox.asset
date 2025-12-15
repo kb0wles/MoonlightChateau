@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63dfb29483e7e47a5db4dde5688741, type: 3}
   m_Name: Fox
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfile
-  characterName: Fox
+  characterName: Wayne
   portraits:
   - image: {fileID: 21300000, guid: dcdc43f7a0ad67b4ab3e3db38233dfae, type: 3}
     emotion: 0

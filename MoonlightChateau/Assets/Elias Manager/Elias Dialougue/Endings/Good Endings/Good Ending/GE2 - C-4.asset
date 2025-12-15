@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: GE2 - C-4
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: "We\u2019ll see what the judge has in store for you. I imagine it
-    won't be pretty."
+  dialogueText: So you admit it then! All I want to know now is why you did this!
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
   emotion: 0
   choices:
   - choiceLabel: 
-    nextNode: {fileID: 11400000, guid: f548d57275d62484c949158892096edc, type: 2}
+    nextNode: {fileID: 11400000, guid: e95d58979da56034f9b1baaa307b229e, type: 2}
   hasNotepadSummary: 0
   notepadSummary: 
