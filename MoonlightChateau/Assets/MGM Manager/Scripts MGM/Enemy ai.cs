@@ -56,7 +56,16 @@ public class Enemyai : MonoBehaviour
         {
             MinigameManger.Instance.Timerdeactivate();
             MinigameManger.Instance.winpopup.SetActive(true);
-            GameManager.Instance.Win();
+
+            if (GameManager.Instance != null) 
+            {
+                GameManager.Instance.Win();
+            }
+
+            if (FadeTransition.Instance != null) 
+            {
+                FadeTransition.Instance.TriggerFadeIN();
+            }
         }
 
         if(other.CompareTag("Flashlight"))

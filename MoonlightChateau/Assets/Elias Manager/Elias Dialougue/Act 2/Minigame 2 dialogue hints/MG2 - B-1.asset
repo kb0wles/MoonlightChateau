@@ -16,4 +16,8 @@ MonoBehaviour:
     here already. We chatted a bit and then left.
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
   emotion: 0
-  choices: []
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: 6efd01929440eb84eac2481dea84f904, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

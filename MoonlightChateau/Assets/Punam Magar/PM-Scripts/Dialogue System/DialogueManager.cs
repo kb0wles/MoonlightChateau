@@ -229,6 +229,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentDialougeNode == endDialogueNode)
         {
+            if (currentCharDlgProfile == null) 
+            {
+                return;
+            }
+
             if(GameManager.Instance != null)
             {
                 // Notify GameManager that dialogue has ended

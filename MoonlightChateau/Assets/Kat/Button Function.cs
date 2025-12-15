@@ -20,7 +20,7 @@ public class ButtonFunction : MonoBehaviour
 
     public void PlayMainGame() 
     {
-        SceneManager.LoadScene("Beta_ACT-1");
+        SceneManager.LoadScene("Beta_Intro");
     }
    
     public void OnChapter()

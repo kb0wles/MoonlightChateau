@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
-  m_Name: MG2 - F-1
+  m_Name: A1 - B-Loop
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: Me and the possum met in the library to chill together. We played
-    a game of checkers, then we left.
-  character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
+  dialogueText: That's All.
+  character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
   emotion: 0
-  choices:
-  - choiceLabel: 
-    nextNode: {fileID: 11400000, guid: 28ef132691c2d664b97baf625de9c0b0, type: 2}
+  choices: []
   hasNotepadSummary: 0
   notepadSummary: 

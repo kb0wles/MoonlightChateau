@@ -93,9 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::winCondition
   wonAllGames: 0
-  trueEnding: WinEnding-Alpha-Milestone
-  falseEnding: WinEnding-Alpha-Milestone
-  endingChoiceSceneName: WinEnding-Alpha-Milestone
+  trueEnding: Beta_MiniGame_4
   allGamesWon: 1
 --- !u!1 &8300244343970826618
 GameObject:
@@ -144,6 +142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   changeScenesBTN: {fileID: 0}
-  maxNumOfMinigames: 1
+  maxNumOfMinigames: 3
   currentMinigameIndex: 0
   dialogueEndCount: 0

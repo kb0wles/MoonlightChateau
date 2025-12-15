@@ -58,7 +58,16 @@ public class MinigameManger : MonoBehaviour
                 startTime = 0;
                 timeractive = false;
                 losepopup.SetActive(true);
-                GameManager.Instance.Lose();
+
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.Lose();
+                }
+
+                if (FadeTransition.Instance != null)
+                {
+                    FadeTransition.Instance.TriggerFadeIN();
+                }
             }
         }
         

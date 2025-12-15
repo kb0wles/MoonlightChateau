@@ -27,6 +27,11 @@ public class FadeTransition : MonoBehaviour
 
     public void GoToNextScene() 
     {
+        if (ManagerScene.Instance == null) 
+        {
+            return;
+        }
+
         ManagerScene.Instance.PlayNextScene();
     }
 
