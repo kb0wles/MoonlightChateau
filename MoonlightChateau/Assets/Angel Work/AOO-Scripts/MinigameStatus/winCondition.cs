@@ -5,8 +5,6 @@ public class winCondition : MonoBehaviour
 {
     [SerializeField] bool wonAllGames = false;
     [SerializeField] string trueEnding; // place holder
-    [SerializeField] string falseEnding; // place holder
-    [SerializeField] string endingChoiceSceneName; // place holder
 
     int winCounter = 0;
     [SerializeField] int allGamesWon = 3;
@@ -31,7 +29,7 @@ public class winCondition : MonoBehaviour
         if (!wonAllGames)
             return;
 
-        SceneManager.LoadScene(endingChoiceSceneName); // Replace with the actual scene name
+        TrueEnding();
     }
 
     public void WinCount()
@@ -53,25 +51,9 @@ public class winCondition : MonoBehaviour
         }
     }
 
-    void FalseEnding()
-    {
-        // Go to the next scene
-        if (wonAllGames)
-        {
-            SceneManager.LoadScene(falseEnding);
-        }
-
-    }
-
     public void PickTrueEnding()
     {
         TrueEnding();
         Debug.Log("TRUE ENDING triggered");
-    }
-
-    public void PickFalseEnding()
-    {
-        FalseEnding();
-        Debug.Log("FALSE ENDING triggered");
     }
 }

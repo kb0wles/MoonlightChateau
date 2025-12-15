@@ -57,9 +57,6 @@ public class GameManager : MonoBehaviour
 
         CheckCanPlayEnding();
 
-        // Play Fide Transition and go to next scene
-        FadeTransition.Instance.GoToNextScene();
-
         //winCondition.Instance.ChooseEndings();
     }
 
@@ -74,9 +71,6 @@ public class GameManager : MonoBehaviour
         }
 
         CheckCanPlayEnding();
-
-        // Play Fide Transition and go to next scene
-        FadeTransition.Instance.GoToNextScene();
 
         //LoseManager.Instance.PlayEndings();
     }
@@ -96,7 +90,17 @@ public class GameManager : MonoBehaviour
     {
         if(currentMinigameIndex >= maxNumOfMinigames) 
         {
-            OnCanPlayEnding?.Invoke();
+            //OnCanPlayEnding?.Invoke();
+            if(winCondition.Instance != null && LoseManager.Instance != null) 
+            {
+                PlayEnding();
+                FadeTransition.Instance.TriggerFadeIN();
+            }
+        }
+        else 
+        {
+            // Play Fide Transition and go to next scene
+            FadeTransition.Instance.GoToNextScene();
         }
     }
 

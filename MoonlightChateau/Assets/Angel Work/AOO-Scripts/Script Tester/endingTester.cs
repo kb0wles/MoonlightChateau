@@ -19,10 +19,5 @@ public class endingTester : MonoBehaviour
         {
             winCondition.Instance.PickTrueEnding();
         }
-
-        if (Keyboard.current.digit2Key.wasPressedThisFrame)
-        {
-            winCondition.Instance.PickFalseEnding();
-        }
     }
 }

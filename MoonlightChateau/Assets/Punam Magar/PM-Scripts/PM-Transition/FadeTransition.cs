@@ -30,4 +30,9 @@ public class FadeTransition : MonoBehaviour
     {
         ManagerScene.Instance.PlayNextScene();
     }
+
+    public void TriggerFadeIN()
+    {
+        fadeAnimator.SetTrigger("FadeIN");
+    }
 }
