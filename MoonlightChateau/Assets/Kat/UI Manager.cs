@@ -34,7 +34,8 @@ public class UIManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Minigame 1 - E" ||
             SceneManager.GetActiveScene().name == "Minigame 2 - E" ||
-            SceneManager.GetActiveScene().name == "Minigame 3")
+            SceneManager.GetActiveScene().name == "Minigame 3" ||
+            SceneManager.GetActiveScene().name == "Minigame 4")
         {
             StateMinigame();
         }
@@ -84,6 +85,7 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0;
         menuActive = menuPause;
         menuActive.SetActive(true);
+
     }
     public void StateUnpause()
     {
