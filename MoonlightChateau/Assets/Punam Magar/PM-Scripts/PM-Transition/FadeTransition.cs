@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class FadeTransition : MonoBehaviour
 {
     public static FadeTransition Instance;
     [SerializeField] private Animator fadeAnimator;
-
 
     private void Awake()
     {
@@ -19,7 +19,6 @@ public class FadeTransition : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 
     public void StartFadeIn()
     {

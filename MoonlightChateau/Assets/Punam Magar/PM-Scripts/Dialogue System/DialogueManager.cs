@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Type Speed")]
     [SerializeField] float typeSpeed = 0.02f;
 
-    [SerializeField] bool Isminigame2;
+    [SerializeField] bool playWhenStart;
 
     [HideInInspector]
     public DialogueNode currentDialougeNode;        //current dialogue node being displayed
@@ -69,7 +69,8 @@ public class DialogueManager : MonoBehaviour
 
         nextCloseTXT = nextCloseGO.GetComponentInChildren<TextMeshProUGUI>();
         nextCloseBTN = nextCloseGO.GetComponent<Button>();
-        if (Isminigame2 == true)
+
+        if (playWhenStart == true)
         {
             DisplayDialogue(startDialogueNode);
         }
