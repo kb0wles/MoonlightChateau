@@ -1,0 +1,29 @@
+commit 2ded8db5ce141f03a9b290faf8202b9bd93eb2d2
+Author: timeportal2000 <timeportal2000@gmail.com>
+Date:   Sat Dec 13 20:36:44 2025 -0500
+
+    Ending Dialogue
+
+commit c7b0140d4a65c9402548a98410f49332bc478759
+Author: timeportal2000 <timeportal2000@gmail.com>
+Date:   Thu Dec 11 18:42:21 2025 -0500
+
+    Act 3 dialog
+
+commit 2ab7fe5e99e4ae499323eb25f4539e76cc6ced72
+Author: timeportal2000 <timeportal2000@gmail.com>
+Date:   Wed Dec 10 18:07:37 2025 -0500
+
+    Act 2 dialog
+
+commit cc4bc5f485380b470a2ed1c406d97f5d0f5e9dac
+Author: timeportal2000 <timeportal2000@gmail.com>
+Date:   Tue Dec 9 14:59:12 2025 -0500
+
+    saved dialogue scene
+
+commit 9837515ae69bc36915a28c89bdae81df1879ba9e
+Author: timeportal2000 <timeportal2000@gmail.com>
+Date:   Tue Dec 9 14:56:01 2025 -0500
+
+    Act 1 Dialogue prefabs

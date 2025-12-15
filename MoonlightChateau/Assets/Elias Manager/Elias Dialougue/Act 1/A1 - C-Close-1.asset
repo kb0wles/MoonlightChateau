@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: A1 - C-Close-1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: 
+  dialogueText: Got all the info you need, detective?
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
   emotion: 0
   choices:
   - choiceLabel: 
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: b567b5540a4bccd4f8030e6e4c2cf966, type: 2}
