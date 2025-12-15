@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -8,27 +9,33 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
+    [Header("Dialogues Node")]
     public DialogueNode startDialogueNode;
     public DialogueNode endDialogueNode;
 
+    [Header("UI GameObjects")]
     [SerializeField] GameObject choiceParent;
 
     // UI Elements
     [SerializeField] GameObject nextCloseGO;
     [SerializeField] GameObject closeableGO;
 
-    // settings
-    [SerializeField] float typeSpeed = 0.02f;
-
     [Header("Character INFOs")]
     [SerializeField] TextMeshProUGUI dialogueBoxTXT;
     [SerializeField] TextMeshProUGUI nameTXT;
     [SerializeField] Image characterIMG;
 
+    // settings
+    [Header("Type Speed")]
+    [SerializeField] float typeSpeed = 0.02f;
+
     [SerializeField] bool Isminigame2;
 
-    //[HideInInspector]
-    public DialogueNode currentDialougeNode;
+    [HideInInspector]
+    public DialogueNode currentDialougeNode;        //current dialogue node being displayed
+
+    [HideInInspector]
+    public CharacterDialogueProfile currentCharDlgProfile; //current character dialogue profile
 
     TextMeshProUGUI nextCloseTXT;
     Button nextCloseBTN;
@@ -55,7 +62,11 @@ public class DialogueManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        currentDialougeNode = startDialogueNode;
+        if (startDialogueNode != null) 
+        {
+            currentDialougeNode = startDialogueNode;
+        }
+
         nextCloseTXT = nextCloseGO.GetComponentInChildren<TextMeshProUGUI>();
         nextCloseBTN = nextCloseGO.GetComponent<Button>();
         if (Isminigame2 == true)
@@ -78,6 +89,7 @@ public class DialogueManager : MonoBehaviour
         if (isTyping && Input.GetKeyDown(KeyCode.Mouse0))
         {
             SkipTyping();
+            CheckForSummuryNote(currentDialougeNode);
         }
 
         ////New Input Handling
@@ -115,7 +127,22 @@ public class DialogueManager : MonoBehaviour
         }
         isTyping = false;
 
+        CheckForSummuryNote(node);
         AddChoices(node);
+    }
+
+    void CheckForSummuryNote(DialogueNode node) 
+    {
+        // Add notepad summary if available
+        if (node.hasNotepadSummary)
+        {
+            if (NotepadManager.Instance == null) 
+            {
+                return;
+            }
+
+            NotepadManager.Instance.AddSummaryNote();
+        }
     }
 
     void AddChoices(DialogueNode node) 
@@ -141,7 +168,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void OnClickNext(DialogueNode node) 
+    void OnClickNext(DialogueNode node)
     {
         nextCloseBTN.onClick.RemoveAllListeners();
         DisplayDialogue(node.choices[0].nextNode);
@@ -170,7 +197,13 @@ public class DialogueManager : MonoBehaviour
         nextCloseGO.SetActive(false);
 
         // Notify GameManager that dialogue has ended
-        GameManager.Instance.CheckForDialogueEnd();
+        CheckForDialogueEnd();
+
+        // set current dialogue node to loop node for future dialogues
+        if (currentCharDlgProfile != null) 
+        {
+            currentCharDlgProfile.SetLoop();
+        }
     }
 
     void SkipTyping() 
@@ -179,5 +212,28 @@ public class DialogueManager : MonoBehaviour
         dialogueBoxTXT.text = currentDialougeNode.dialogueText;
         isTyping = false;
         AddChoices(currentDialougeNode);
+    }
+
+    public void UpdateDialogueSettings(CharacterDialogueProfile charDlgProfile) 
+    {
+        currentCharDlgProfile = charDlgProfile;
+
+        startDialogueNode = charDlgProfile.GetStartNode();
+        endDialogueNode = charDlgProfile.GetEndNode();
+
+        currentDialougeNode = startDialogueNode;
+    }
+
+    public void CheckForDialogueEnd()
+    {
+        if (currentDialougeNode == endDialogueNode)
+        {
+            if(GameManager.Instance != null)
+            {
+                // Notify GameManager that dialogue has ended
+                GameManager.Instance.dialogueEndCount++;
+                GameManager.Instance.HasAllDialgueEnded();
+            }
+        }
     }
 }

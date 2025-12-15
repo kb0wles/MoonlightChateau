@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - ChangeScenesBTN
+  - Flashlight
   layers:
   - Default
   - TransparentFX
