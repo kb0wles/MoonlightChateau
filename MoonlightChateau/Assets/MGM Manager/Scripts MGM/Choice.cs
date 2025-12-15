@@ -19,14 +19,13 @@ public class Choice : MonoBehaviour
 
     public void ClickYes()
     {
-        FinalChoice.Instance.SetSuspect(choiceID);
-        int check = FinalChoice.Instance.getSuspectnum();
-        Debug.Log(check);
-        if (check == correct)
+        choiceID = FinalChoice.Instance.getSuspectnum();
+        Debug.Log(choiceID);
+        if (choiceID == correct)
         {
             // load true ending
         }
-        else if (check != correct)
+        else if (choiceID != correct)
         {
             // load mistake ending
         }
