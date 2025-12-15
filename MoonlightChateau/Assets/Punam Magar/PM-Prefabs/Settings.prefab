@@ -1576,6 +1576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8260669803210706850}
   - component: {fileID: 4877631997654485728}
+  - component: {fileID: 8176048600655047378}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -1616,13 +1617,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7988499478665928405}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f2d33a7b1c552c4d99a766f55e4d088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIOption
   musicSlider: {fileID: 4023082348487988037}
   sfxSlider: {fileID: 6190858786059078275}
+--- !u!114 &8176048600655047378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988499478665928405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5afaeb692b9604a46a1f764aeb5b795d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Volume
+  mixer: {fileID: 0}
 --- !u!1 &8365624763754388606
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,6 @@ public class UIManager : MonoBehaviour
     #region Fields
     public static UIManager instance;
     //UI containers
-    //all containers will be active by default
     //menu ui active but submenus will not 
     [SerializeField] GameObject gameUI;
     [SerializeField] GameObject titleUI;
@@ -18,6 +17,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuNotes;
 
+    //separate object for mini game ui easy switch
+    [SerializeField] GameObject minigameBGM;
+
     public bool isPaused;
     #endregion
 
@@ -28,9 +30,10 @@ public class UIManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "UI Test Scene")
         {
-            gameUI.SetActive(true);
+            gameUI.SetActive(false);
             titleUI.SetActive(true);
             menuUI.SetActive(true);
+            minigameBGM.SetActive(false);
         }
         else if (SceneManager.GetActiveScene().name == "Minigame 1 - E" ||
             SceneManager.GetActiveScene().name == "Minigame 2 - E" ||
@@ -69,12 +72,16 @@ public class UIManager : MonoBehaviour
     public void StateGameStart()
     {
         titleUI.SetActive(false);
+        gameUI.SetActive(true);
+        menuUI.SetActive(true);
+        minigameBGM.SetActive(false);
     }
     public void StateMinigame()
     {
         gameUI.SetActive(false);
         titleUI.SetActive(false);
         menuUI.SetActive(true);
+        minigameBGM.SetActive(true);
     }
     #endregion
                 
