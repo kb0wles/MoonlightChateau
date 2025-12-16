@@ -63,11 +63,6 @@ public class MinigameManger : MonoBehaviour
                 {
                     GameManager.Instance.Lose();
                 }
-
-                if (FadeTransition.Instance != null)
-                {
-                    FadeTransition.Instance.TriggerFadeIN();
-                }
             }
         }
         

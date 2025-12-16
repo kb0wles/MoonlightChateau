@@ -18,6 +18,12 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public enum MinigameStatus
+    {
+        Win,
+        Lose
+    }
+
     public static GameManager Instance;
 
     public static event System.Action OnCanPlayEnding;
@@ -30,6 +36,10 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public int dialogueEndCount = 0;
+
+    [HideInInspector]
+    public MinigameStatus prevMiniGameResult;
+
     int numOfCharsInScene;
 
     private void Awake()
@@ -53,9 +63,11 @@ public class GameManager : MonoBehaviour
         {
             winCondition.Instance.WinCount();
             currentMinigameIndex++;
+            prevMiniGameResult = MinigameStatus.Win;
         }
 
-        CheckCanPlayEnding();
+        FadeTransition.Instance.TriggerFadeIN();
+        //CheckCanPlayEnding();
 
         //winCondition.Instance.ChooseEndings();
     }
@@ -68,9 +80,11 @@ public class GameManager : MonoBehaviour
         {
             LoseManager.Instance.UpdateCounter();
             currentMinigameIndex++;
+            prevMiniGameResult = MinigameStatus.Lose;
         }
 
-        CheckCanPlayEnding();
+        FadeTransition.Instance.TriggerFadeIN();
+        //CheckCanPlayEnding();
 
         //LoseManager.Instance.PlayEndings();
     }
@@ -118,6 +132,11 @@ public class GameManager : MonoBehaviour
             // Play Fide Transition and go to next scene
             FadeTransition.Instance.GoToNextScene();
         }
+    }
+
+    public bool IsAllDialogueEnded() 
+    {
+        return dialogueEndCount >= numOfCharsInScene;
     }
 
     private void OnEnable()

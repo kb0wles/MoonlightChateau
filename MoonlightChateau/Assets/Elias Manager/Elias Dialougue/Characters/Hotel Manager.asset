@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63dfb29483e7e47a5db4dde5688741, type: 3}
   m_Name: Hotel Manager
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfile
-  characterName: 
+  characterName: HM
   portraits: []

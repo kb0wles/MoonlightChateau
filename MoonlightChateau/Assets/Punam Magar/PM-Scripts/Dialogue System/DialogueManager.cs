@@ -13,6 +13,10 @@ public class DialogueManager : MonoBehaviour
     public DialogueNode startDialogueNode;
     public DialogueNode endDialogueNode;
 
+    [Header("Cloasing Dialogue")]
+    public bool hasClosingDialogue;
+    [SerializeField] DialogueNode closingDialogueNode;
+
     [Header("UI GameObjects")]
     [SerializeField] GameObject choiceParent;
 
@@ -44,6 +48,7 @@ public class DialogueManager : MonoBehaviour
     public bool isTyping = false;
 
     bool isDialogueActive = false;
+    bool playedClosingDialogue = false;
 
     Coroutine typeTextCoro;
 
@@ -197,14 +202,14 @@ public class DialogueManager : MonoBehaviour
         closeableGO.SetActive(false);
         nextCloseGO.SetActive(false);
 
-        // Notify GameManager that dialogue has ended
-        CheckForDialogueEnd();
-
         // set current dialogue node to loop node for future dialogues
         if (currentCharDlgProfile != null) 
         {
             currentCharDlgProfile.SetLoop();
         }
+
+        // Notify GameManager that dialogue has ended
+        CheckForDialogueEnd();
     }
 
     void SkipTyping() 
@@ -229,17 +234,44 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentDialougeNode == endDialogueNode)
         {
-            if (currentCharDlgProfile == null) 
+            if (GameManager.Instance != null)
             {
-                return;
-            }
-
-            if(GameManager.Instance != null)
-            {
+                
                 // Notify GameManager that dialogue has ended
                 GameManager.Instance.dialogueEndCount++;
+
+                if (hasClosingDialogue == true &&
+                    closingDialogueNode != null &&
+                    GameManager.Instance.IsAllDialogueEnded() &&
+                    playedClosingDialogue == false)
+                {
+                    playedClosingDialogue = true;
+                    DisplayDialogue(closingDialogueNode);
+                    return;
+                }
+
                 GameManager.Instance.HasAllDialgueEnded();
             }
         }
+
+        if (GameManager.Instance != null)
+        {
+            if (hasClosingDialogue == true &&
+                closingDialogueNode != null &&
+                GameManager.Instance.IsAllDialogueEnded() &&
+                playedClosingDialogue == false)
+            {
+                playedClosingDialogue = true;
+                DisplayDialogue(closingDialogueNode);
+                return;
+            }
+        }
+
+        if (hasClosingDialogue && playedClosingDialogue) 
+        {
+            GameManager.Instance.HasAllDialgueEnded();
+        }
     }
+
+    void CheckHas
 }

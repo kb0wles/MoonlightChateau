@@ -12,5 +12,6 @@ public class ScenesStatus
         MINIGAME_2,
         MINIGAME_3,
         MINIGAME_4,
+        MG3_GARDEN
     }
 }

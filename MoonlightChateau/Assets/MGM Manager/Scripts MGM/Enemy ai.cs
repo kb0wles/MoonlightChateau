@@ -61,11 +61,6 @@ public class Enemyai : MonoBehaviour
             {
                 GameManager.Instance.Win();
             }
-
-            if (FadeTransition.Instance != null) 
-            {
-                FadeTransition.Instance.TriggerFadeIN();
-            }
         }
 
         if(other.CompareTag("Flashlight"))

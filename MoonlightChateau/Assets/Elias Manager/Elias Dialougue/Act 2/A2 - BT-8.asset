@@ -16,6 +16,6 @@ MonoBehaviour:
     get going."
   character: {fileID: 11400000, guid: 3df30078f575473409a7394f71111371, type: 2}
   emotion: 0
-  choices:
-  - choiceLabel: 
-    nextNode: {fileID: 0}
+  choices: []
+  hasNotepadSummary: 0
+  notepadSummary: 

@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: A3 - N-Closing 3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: 
+  dialogueText: Suddenly, you were awoken by a loud crash outside, it sounded like
+    it came from the garden.
   character: {fileID: 11400000, guid: 70862454adc2081408ed99ecbd8e1452, type: 2}
   emotion: 0
-  choices:
-  - choiceLabel: 
-    nextNode: {fileID: 0}
+  choices: []
   hasNotepadSummary: 0
   notepadSummary: 

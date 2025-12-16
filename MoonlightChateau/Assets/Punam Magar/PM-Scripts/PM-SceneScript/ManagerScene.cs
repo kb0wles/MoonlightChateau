@@ -13,6 +13,7 @@ public class ManagerScene : MonoBehaviour
     [SerializeField] string MINIGAME_2;
     [SerializeField] string MINIGAME_3;
     [SerializeField] string MINIGAME_4;
+    [SerializeField] string MG3_GARDEN;
 
     void Awake()
     {
@@ -33,6 +34,14 @@ public class ManagerScene : MonoBehaviour
         if(SceneTracker.Instance == null) 
         {
             Debug.LogWarning("SceneTracker Instance is null!");
+            return;
+        }
+
+        if(SceneTracker.Instance.currentScene == ScenesStatus.SceneType.MG3_GARDEN)
+        {
+            // Play ending scenes
+            Debug.Log("Checking for Ending Scenes...");
+            GameManager.Instance.CheckCanPlayEnding();
             return;
         }
 
@@ -58,6 +67,9 @@ public class ManagerScene : MonoBehaviour
                 break;
             case ScenesStatus.SceneType.MINIGAME_4:
                 SceneManager.LoadScene(MINIGAME_4);
+                break;
+            case ScenesStatus.SceneType.MG3_GARDEN:
+                SceneManager.LoadScene(MG3_GARDEN);
                 break;
         }
     }
