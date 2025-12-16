@@ -15,7 +15,9 @@ MonoBehaviour:
   dialogueText: You want to know what I saw, yes? I can oblige you with this info,
     I suppose.
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 7
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 847441cf1948b0548b4ed7e10126ee4b, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: "Wait, Detective! It wasn't me! You\u2019re making a mistake!"
   character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 43872537860b91d4583a79b40d20169a, type: 2}

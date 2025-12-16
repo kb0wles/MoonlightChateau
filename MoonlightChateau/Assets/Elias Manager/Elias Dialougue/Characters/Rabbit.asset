@@ -12,7 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63dfb29483e7e47a5db4dde5688741, type: 3}
   m_Name: Rabbit
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfile
-  characterName: Rabbit
+  characterName: Caroline
   portraits:
-  - image: {fileID: 0}
+  - image: {fileID: 21300000, guid: 3cfeb738618bca94e9ec58b966ae5f55, type: 3}
     emotion: 0
+  - image: {fileID: 21300000, guid: 6384b7eae3fa86c4093c2069a004c74e, type: 3}
+    emotion: 3
+  - image: {fileID: 21300000, guid: 77ce22a68df303f4da6b5fc6e3d1af13, type: 3}
+    emotion: 1
+  - image: {fileID: 21300000, guid: fe8f6d85ad063cb4c9df04fef7770b50, type: 3}
+    emotion: 2
+  - image: {fileID: 21300000, guid: 3893c2b3c7c6d394e9c34e4c890ea271, type: 3}
+    emotion: 9
+  - image: {fileID: 21300000, guid: 896f7a5109367c145b564a01fdd28389, type: 3}
+    emotion: 4

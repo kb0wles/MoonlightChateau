@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Ah, there you are, detective!
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
-  emotion: 0
+  emotion: 1
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 4321d3087ad361e479fb886280f03998, type: 2}

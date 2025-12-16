@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: GE2 - C-3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: So you admit it then! All I want to know now is why you did this!
+  dialogueText: "All the evidence the detective gathered lines up with you perfectly!
+    You can\u2019t lie your way out of this!"
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: 3799a1d847aa1e846805a80198f88de9, type: 2}
   hasNotepadSummary: 0
   notepadSummary: 

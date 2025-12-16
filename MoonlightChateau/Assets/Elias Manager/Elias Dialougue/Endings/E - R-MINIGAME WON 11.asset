@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Night, sugar!
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
-  choices: []
+  emotion: 1
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: d837119b7f9c4e044a4ca25c823ce86c, type: 2}
   hasNotepadSummary: 0
   notepadSummary: 

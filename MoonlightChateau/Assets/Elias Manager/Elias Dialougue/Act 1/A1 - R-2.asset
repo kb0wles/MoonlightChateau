@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: A1 - R-2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: Follow me sugar, Officer (COP NAME HERE) is waiting for you.
+  dialogueText: Follow me sugar, Officer Raymond is waiting for you.
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
   emotion: 0
-  choices: []
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: 0aaa8fcae300b08438bf023a9a01f261, type: 2}
   hasNotepadSummary: 0
   notepadSummary: 

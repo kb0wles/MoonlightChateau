@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: A1 - R-5
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: "My name\u2019s (RABBIT NAME), got that sugar?"
+  dialogueText: "My name\u2019s Caroline, got that sugar?"
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 1
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: d83c18789fef39a49a13e96444594626, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

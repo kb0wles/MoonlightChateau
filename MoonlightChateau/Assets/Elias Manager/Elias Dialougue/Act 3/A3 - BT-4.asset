@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: "Maybe buy a drink and I\u2019ll tell you."
   character: {fileID: 11400000, guid: 3df30078f575473409a7394f71111371, type: 2}
-  emotion: 0
+  emotion: 8
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: ab4f24f7eec63a441ab31c2acbecce6c, type: 2}

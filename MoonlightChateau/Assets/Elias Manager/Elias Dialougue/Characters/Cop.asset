@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63dfb29483e7e47a5db4dde5688741, type: 3}
   m_Name: Cop
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfile
-  characterName: Cop
+  characterName: Raymond
   portraits:
-  - image: {fileID: 0}
+  - image: {fileID: 21300000, guid: 3728dbe6cb8bf1147883b53c65a90cd6, type: 3}
     emotion: 0
+  - image: {fileID: 21300000, guid: c0e8ed7e1c2c9ed4ab37fe81d59aedc3, type: 3}
+    emotion: 1
+  - image: {fileID: 21300000, guid: 52ca76af97585514c9367bbffd0eaf30, type: 3}
+    emotion: 3

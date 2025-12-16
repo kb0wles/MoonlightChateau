@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "Don\u2019t point your fingers at me! I had nothing to do with this!
     I would never kill someone!"
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 995730daa71506e41a184c8de5f6100f, type: 2}

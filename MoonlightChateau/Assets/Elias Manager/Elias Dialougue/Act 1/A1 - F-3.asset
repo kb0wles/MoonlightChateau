@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: "When all of a sudden, the lights cut out! I can\u2019t see nothin!"
   character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
-  emotion: 0
+  emotion: 4
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: df25093c24064d943a7518e75f0b7a3e, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

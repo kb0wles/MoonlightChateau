@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "I\u2019m an important person! I shouldn't have to deal with this
     nonsense!"
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 7
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 1d2421526cd4d1047abca394dc3d7e6b, type: 2}

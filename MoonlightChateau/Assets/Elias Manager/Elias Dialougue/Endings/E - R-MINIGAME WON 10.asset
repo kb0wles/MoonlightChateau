@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "Anyways, I think that\u2019s enough excitement for me tonight! I\u2019m
     gonna head back inside and go to bed."
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 1
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 2dfedd835c5037c46b80bbbdb7e731fe, type: 2}

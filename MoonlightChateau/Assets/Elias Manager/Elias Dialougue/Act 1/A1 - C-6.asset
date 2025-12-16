@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: A1 - C-6
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: The victim, (VICTIM NAME HERE), was crushed by a chandelier, and
-    we have reason to suspect it wasn't an accident.
+  dialogueText: The victim, Milton, was crushed by a chandelier, and we have reason
+    to suspect it wasn't an accident.
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
   emotion: 0
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 512b84f5310629d4d9dfda4be9d320fa, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

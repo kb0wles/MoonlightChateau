@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: If you ask me, I think it was the rabbit.
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 7
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 6d9563f09106ae74396ea47b987ef324, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

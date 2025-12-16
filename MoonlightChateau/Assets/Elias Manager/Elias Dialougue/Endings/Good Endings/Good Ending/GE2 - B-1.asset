@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: GE2 - B-1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: 
-  character: {fileID: 0}
-  emotion: 0
-  choices: []
+  dialogueText: Hah! I Knew it!
+  character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
+  emotion: 7
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: f548d57275d62484c949158892096edc, type: 2}
   hasNotepadSummary: 0
   notepadSummary: 
