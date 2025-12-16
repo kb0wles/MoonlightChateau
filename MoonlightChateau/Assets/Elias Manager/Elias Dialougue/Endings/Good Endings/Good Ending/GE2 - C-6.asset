@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: And great work, detective. Without you, this crime might never have
     been solved.
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
-  emotion: 0
+  emotion: 1
   choices: []
   hasNotepadSummary: 0
   notepadSummary: 

@@ -15,7 +15,9 @@ MonoBehaviour:
   dialogueText: "Now my little foxy ears are pretty sharp, so while yea maybe I can\u2019t
     see, I sure can hear!"
   character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
-  emotion: 0
+  emotion: 8
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 7e56392a2776a30469a35d2933398e55, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

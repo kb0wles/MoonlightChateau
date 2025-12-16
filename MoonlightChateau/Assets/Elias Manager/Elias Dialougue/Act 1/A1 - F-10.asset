@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: "And what do I see? That guy over there\u2019s crushed by the chandelier!"
   character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 2b99e2e2bcebf234cbbc7d1cd67f0a40, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

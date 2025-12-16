@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Never did get it back though. Good thing I always bring a spare huh?
   character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
-  emotion: 0
+  emotion: 1
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 61048369956c76d4db01f84d71b78501, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

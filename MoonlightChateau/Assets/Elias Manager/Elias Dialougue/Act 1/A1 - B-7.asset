@@ -19,3 +19,5 @@ MonoBehaviour:
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: d4e71d53960b3824b980c29c2f9db725, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "You will catch them soon right? I\u2019m getting quite tired of
     this whole thing."
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 3
   choices: []
   hasNotepadSummary: 0
   notepadSummary: 

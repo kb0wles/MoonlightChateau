@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: "Well, I\u2019d say it looks like we have enough evidence!"
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
-  emotion: 0
+  emotion: 1
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 61d68c7780fffb8449724dd9e734fab6, type: 2}

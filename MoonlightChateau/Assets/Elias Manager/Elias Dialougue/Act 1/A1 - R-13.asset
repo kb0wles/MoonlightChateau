@@ -15,7 +15,9 @@ MonoBehaviour:
   dialogueText: "He seems like a bit of a delinquent to me hun. Maybe he was marking
     him as a target or somethin\u2019?"
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: ca048f3742808ef4bb81e5cd51cf024f, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

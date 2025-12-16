@@ -15,7 +15,9 @@ MonoBehaviour:
   dialogueText: Not all of us like one another of course. But I never thought someone
     would stoop to murder.
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 7
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: a84978ed0961e174ebe40db413b66d66, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

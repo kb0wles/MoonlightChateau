@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Milton was a pretty good friend of mine.
   character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
-  emotion: 0
+  emotion: 2
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 49c4f640bad0a2648831a495f288d85b, type: 2}

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
-  m_Name: A2 - B-4
+  m_Name: A2 - R-1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: You can see how that turned out I suppose.
-  character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 2
+  dialogueText: Hey again sugar, got any new leads yet?
+  character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
+  emotion: 1
   choices:
   - choiceLabel: 
-    nextNode: {fileID: 11400000, guid: 9dc3140ff060d2c478090508487dde6f, type: 2}
+    nextNode: {fileID: 11400000, guid: f2038fa00ed5412409c3f2ea98f4e862, type: 2}
   hasNotepadSummary: 0
   notepadSummary: 

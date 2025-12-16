@@ -15,7 +15,9 @@ MonoBehaviour:
   dialogueText: You wanna know what I saw? Well I'm glad you asked hun, because I
     got quite the tale for ya!
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 1
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 8fa97b537e9454849ad94e2d38af684a, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

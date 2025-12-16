@@ -15,5 +15,7 @@ MonoBehaviour:
   dialogueText: "I\u2019m no detective like you are sugar, so you can probably figure
     this out better than me!"
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 1
   choices: []
+  hasNotepadSummary: 0
+  notepadSummary: 

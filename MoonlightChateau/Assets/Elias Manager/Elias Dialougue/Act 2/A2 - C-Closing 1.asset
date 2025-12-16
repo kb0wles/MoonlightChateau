@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: A2 - C-Closing 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: You can talk to some of the staff as well, maybe they'll know something.
+  dialogueText: Ah, there you are, detective!
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
-  emotion: 0
-  choices: []
+  emotion: 1
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: 4321d3087ad361e479fb886280f03998, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

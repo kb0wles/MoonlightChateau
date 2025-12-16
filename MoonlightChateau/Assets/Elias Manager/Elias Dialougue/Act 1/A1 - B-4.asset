@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: A shame what happened to it, yes? Oh, and the victim too of course.
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 2
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 21193f3c2fddb8e4987ec72654330224, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

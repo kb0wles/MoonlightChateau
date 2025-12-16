@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: But I still have a business to run. I can leave the investigative
     business to people like you.
   character: {fileID: 11400000, guid: bac9a367f419b344f89418142719a572, type: 2}
-  emotion: 0
+  emotion: 7
   choices: []
   hasNotepadSummary: 0
   notepadSummary: 
