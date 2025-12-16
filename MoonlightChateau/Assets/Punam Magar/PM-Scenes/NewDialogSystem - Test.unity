@@ -3015,6 +3015,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488642571}
   m_CullTransparentMesh: 1
+--- !u!1 &496848144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496848146}
+  - component: {fileID: 496848145}
+  m_Layer: 0
+  m_Name: SceneTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &496848145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496848144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f24221303e13e47a12a4a450cee374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneTracker
+  currentScene: 0
+  nextSceneToLoad: 1
+--- !u!4 &496848146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496848144}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502426156
 GameObject:
   m_ObjectHideFlags: 0
@@ -5480,8 +5526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f795e53f6a1335f4a96ddcc39aa07219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogueProfile
-  startNode: {fileID: 11400000, guid: b6ba635257e25fb4cb3c22d738e7af51, type: 2}
-  endNode: {fileID: 11400000, guid: f8e8cbab853749c43bf4e815da9e89ba, type: 2}
+  startNode: {fileID: 11400000, guid: 7a79401ff828eee478ba04eb35401517, type: 2}
+  endNode: {fileID: 11400000, guid: 6d9563f09106ae74396ea47b987ef324, type: 2}
   loopNode: {fileID: 11400000, guid: dcffdaf4413fda444b12dc51d220df33, type: 2}
 --- !u!1 &818211124
 GameObject:
@@ -8155,6 +8201,7 @@ MonoBehaviour:
   changeScenesBTN: {fileID: 0}
   maxNumOfMinigames: 1
   currentMinigameIndex: 0
+  dialogueEndCount: 0
 --- !u!4 &1209903156
 Transform:
   m_ObjectHideFlags: 0
@@ -10331,8 +10378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f795e53f6a1335f4a96ddcc39aa07219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDialogueProfile
-  startNode: {fileID: 11400000, guid: d46c53deb3ed3b944947084f9726aa93, type: 2}
-  endNode: {fileID: 11400000, guid: 6fbdf84458ff75d45a9fc508d50c2bdc, type: 2}
+  startNode: {fileID: 11400000, guid: 0aaa8fcae300b08438bf023a9a01f261, type: 2}
+  endNode: {fileID: 11400000, guid: 512b84f5310629d4d9dfda4be9d320fa, type: 2}
   loopNode: {fileID: 11400000, guid: 63222b87f84841246974f5be6a41158c, type: 2}
 --- !u!1 &1848243269
 GameObject:
@@ -11986,3 +12033,4 @@ SceneRoots:
   - {fileID: 1490844692}
   - {fileID: 1585583924}
   - {fileID: 1209903156}
+  - {fileID: 496848146}

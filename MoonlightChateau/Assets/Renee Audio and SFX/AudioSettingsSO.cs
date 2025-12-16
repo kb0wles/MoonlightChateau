@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 [CreateAssetMenu(fileName = "AudioSettingsSO", menuName = "Audio/Audio Settings")]
 public class AudioSettingsSO : ScriptableObject
@@ -8,4 +9,5 @@ public class AudioSettingsSO : ScriptableObject
     public float sfxVolume = 1f;
 
     public AudioClip defaultBGM;
+    public AudioMixer mixer;
 }

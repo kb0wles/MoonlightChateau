@@ -1,12 +1,9 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIOption : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    MenuSFXManager sfxManager;
+    public MenuSFXManager sfxManager;
 
     [Header("Sliders")]
     [SerializeField] Slider musicSlider;
@@ -17,15 +14,17 @@ public class UIOption : MonoBehaviour
         sfxManager = MenuSFXManager.Get();
     }
 
-    public void UpdateMusicVol() 
+    public void UpdateMusicVol()
     {
         sfxManager.settings.bgmVolume = musicSlider.value;
         sfxManager.PlayNavigate(); // can change to different sound if needed
+        sfxManager.settings.mixer.SetFloat("music", (80 * sfxManager.settings.bgmVolume) - 80);
     }
 
-    public void UpdateSFXVol() 
+    public void UpdateSFXVol()
     {
         sfxManager.settings.sfxVolume = sfxSlider.value;
         sfxManager.PlaySelect();
+        sfxManager.settings.mixer.SetFloat("sfx", (80 * sfxManager.settings.sfxVolume) - 80);
     }
 }

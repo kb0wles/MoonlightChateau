@@ -29,6 +29,8 @@ public class Minigame_Click : MonoBehaviour
 
     public void ColorChange()
     {
+        if (Time.timeScale == 0) return; //if paused ignore clicks -kb 
+
         if (TFcheck == true && img.color != Color.green && strikes.GetStrikes() != 3)
         {
             img.color = Color.green;

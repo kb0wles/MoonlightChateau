@@ -34,6 +34,7 @@ public class FinalChoice : MonoBehaviour
     public void SetSuspect(int num)
     {
         suspectNum = num;
+        ConfirmChoice();
     }
 
 }

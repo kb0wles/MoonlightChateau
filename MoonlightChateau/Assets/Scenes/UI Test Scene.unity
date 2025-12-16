@@ -392,58 +392,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 119807103945763551, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662688573658125735, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662688573658125735, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662688573658125735, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1162151590797053257, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927088029406567829, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_Name
-      value: Garden (minigame3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2702032478491429468, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3078046188170610252, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_Name
-      value: Parlor(minigame 1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3274482453009219663, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_Name
-      value: Facade (intro/ending)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3774589182564904181, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3984595176175907436, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_Name
-      value: Lobby(story begins)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6450109829648350585, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_Name
-      value: Bar(minigame 2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7013279760786571674, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8173656206696602160, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -527,14 +475,6 @@ PrefabInstance:
     - target: {fileID: 8300861270594590533, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
       propertyPath: m_Name
       value: MainCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8893167503749125050, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: onOptions
-      objectReference: {fileID: 0}
-    - target: {fileID: 9006235531070311942, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
