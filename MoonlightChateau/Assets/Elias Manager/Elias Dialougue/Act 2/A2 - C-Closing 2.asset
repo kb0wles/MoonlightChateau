@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fdff1beeb925cb40bd0cc31a9c3d2c1, type: 3}
   m_Name: A2 - C-Closing 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  dialogueText: You can talk to some of the staff as well, maybe they'll know something.
+  dialogueText: We have reason to believe that all of the suspects visited the library
+    to meet with the victim at different points before the murder.
   character: {fileID: 11400000, guid: 98261861d945307408971aba702940ca, type: 2}
   emotion: 0
-  choices: []
+  choices:
+  - choiceLabel: 
+    nextNode: {fileID: 11400000, guid: 7853625d7c0b60848aa141f08c7da85a, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

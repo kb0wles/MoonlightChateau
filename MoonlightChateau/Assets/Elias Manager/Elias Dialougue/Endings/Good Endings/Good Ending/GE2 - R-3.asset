@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Hmph. That little rodent was trying to blackmail me!
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 7d44427d9823e7347a5c986dc64c5c9b, type: 2}

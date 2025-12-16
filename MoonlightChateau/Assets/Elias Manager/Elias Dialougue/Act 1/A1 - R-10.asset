@@ -15,7 +15,9 @@ MonoBehaviour:
   dialogueText: And then I happen to notice the chandeliers fallen on that sweet
     fella over there!
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 2
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: d6d49dab170ab29448e3d54858e08f83, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

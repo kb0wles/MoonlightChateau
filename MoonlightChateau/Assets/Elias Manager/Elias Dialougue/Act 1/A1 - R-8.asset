@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Then, I hear this loud crash that nearly scares the pants off me!
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 4
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: cdad5223ac4fcce449c6c1fcf67bcc41, type: 2}
+  hasNotepadSummary: 0
+  notepadSummary: 

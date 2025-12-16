@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: Thought it was the killer, so I ran!
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 9
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 2a99915254b0a4c438ec94bf91057db2, type: 2}

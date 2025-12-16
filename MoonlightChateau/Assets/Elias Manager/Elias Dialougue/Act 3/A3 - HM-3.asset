@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: As long as you have this solved by tomorrow morning and are out of
     my hair.
   character: {fileID: 11400000, guid: bac9a367f419b344f89418142719a572, type: 2}
-  emotion: 0
+  emotion: 7
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: c70e83f500c3eae42b3109dd6c33879a, type: 2}

@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "It\u2019s nothing super important sugar. Just some friendly business
     between two individuals."
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 1
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 95689938210f8c24c8dd58f02e185480, type: 2}

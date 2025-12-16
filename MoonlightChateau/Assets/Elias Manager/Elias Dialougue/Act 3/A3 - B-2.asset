@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "all of this \u201Cbeing a suspect\u201D business is far too stressful
     for my nerves!"
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 0e9d2975f5cb51a4abada26ac089b5f8, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: You still haven't solved this yet?
   character: {fileID: 11400000, guid: bac9a367f419b344f89418142719a572, type: 2}
-  emotion: 0
+  emotion: 7
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: a61ed44f19d86e3418522c2049e29597, type: 2}

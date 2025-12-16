@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "I wasn\u2019t going to just accept that, so when the lights went
     out, I took the opportunity to get rid of him!"
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 3
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 06318e4c4f3e4814fb5123bf7ac7a851, type: 2}

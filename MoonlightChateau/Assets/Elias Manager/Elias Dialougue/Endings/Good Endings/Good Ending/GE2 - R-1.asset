@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: What?! Why would you think I did this?!
   character: {fileID: 11400000, guid: bf6180ada3d040a4b82d821fc1ff19ab, type: 2}
-  emotion: 0
+  emotion: 9
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 57a83e1b06dc8654cb5c3832376e5dae, type: 2}

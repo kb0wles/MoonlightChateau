@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueText: "Once we get out of here, I\u2019m definitely going home to relax
     by my pool."
   character: {fileID: 11400000, guid: 4b6c27361ba0d7540b306cf36db71ae3, type: 2}
-  emotion: 0
+  emotion: 7
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: a3cb5ef29599cd745911f4733c1f55f9, type: 2}
