@@ -9,7 +9,7 @@ public class FinalChoice : MonoBehaviour
     [SerializeField] int suspectNum;
 
     public static FinalChoice Instance;
-
+    public string charName;
 
     void Awake()
     {
@@ -24,6 +24,11 @@ public class FinalChoice : MonoBehaviour
     public void TurnOffChoice()
     {
         img.SetActive(false);
+    }
+
+    public void SetCharName(string _charName) 
+    {
+        charName = _charName;
     }
 
     public int getSuspectnum()

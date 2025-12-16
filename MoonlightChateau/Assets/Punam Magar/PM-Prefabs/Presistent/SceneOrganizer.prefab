@@ -53,3 +53,7 @@ MonoBehaviour:
   MINIGAME_4: Beta_MiniGame_4
   MG3_GARDEN: Beta_MG3-Garden
   LOBBY: Beta_Lobby
+  FOX_FE: Beta_FE-Fox
+  BEAR_FE: Beta_FE-Bear
+  RABBIT_GE: Beta_Rabbit-TE
+  CREDITS: Beta_Credits

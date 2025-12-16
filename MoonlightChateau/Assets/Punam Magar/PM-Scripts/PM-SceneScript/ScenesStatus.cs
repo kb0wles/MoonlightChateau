@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Serializable]
 public class ScenesStatus
 {
     public enum SceneType
@@ -13,6 +14,7 @@ public class ScenesStatus
         MINIGAME_3,
         MINIGAME_4,
         MG3_GARDEN,
-        LOBBY
+        LOBBY,
+        CREDITS
     }
 }

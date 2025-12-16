@@ -44,6 +44,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Beta-Milestone/Beta_Lobby.unity
     guid: f5db713488fe70d4d99012d3c31b5a83
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_FE-Fox.unity
+    guid: 9d8f06706a31f4f4ea0065b3a9ea1e84
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_Credits.unity
+    guid: c7ff486f57dd056479f839f52a91a404
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_FE-Bear.unity
+    guid: 7942fd974c8c1ef4abbc35a2034e1b19
+  - enabled: 1
+    path: Assets/Scenes/Beta-Milestone/Beta_Rabbit-TE.unity
+    guid: 60074b85210736a41b16d4ebeaf2ed14
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

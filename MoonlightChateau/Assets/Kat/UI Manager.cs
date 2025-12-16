@@ -35,10 +35,10 @@ public class UIManager : MonoBehaviour
             menuUI.SetActive(true);
             minigameBGM.SetActive(false);
         }
-        else if (SceneManager.GetActiveScene().name == "Minigame 1 - E" ||
-            SceneManager.GetActiveScene().name == "Minigame 2 - E" ||
-            SceneManager.GetActiveScene().name == "Minigame 3" ||
-            SceneManager.GetActiveScene().name == "Minigame 4")
+        else if (SceneManager.GetActiveScene().name == "Beta_MiniGame_1" ||
+            SceneManager.GetActiveScene().name == "Beta_MiniGame_2" ||
+            SceneManager.GetActiveScene().name == "Beta_MiniGame_3" ||
+            SceneManager.GetActiveScene().name == "Beta_MiniGame_4")
         {
             StateMinigame();
         }

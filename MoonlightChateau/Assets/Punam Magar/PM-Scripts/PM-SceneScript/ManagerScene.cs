@@ -15,6 +15,10 @@ public class ManagerScene : MonoBehaviour
     [SerializeField] string MINIGAME_4;
     [SerializeField] string MG3_GARDEN;
     [SerializeField] string LOBBY;
+    [SerializeField] string FOX_FE;
+    [SerializeField] string BEAR_FE;
+    [SerializeField] string RABBIT_GE;
+    [SerializeField] string CREDITS;
 
     void Awake()
     {
@@ -44,7 +48,22 @@ public class ManagerScene : MonoBehaviour
             return;
         }
 
-        switch (SceneTracker.Instance.nextSceneToLoad)
+        LoadScene(SceneTracker.Instance.nextSceneToLoad);
+    }
+
+    public void PlayGardenScene() 
+    {
+        SceneManager.LoadScene(MG3_GARDEN);
+    }
+
+    public void PlayLobbyScene() 
+    {
+        SceneManager.LoadScene(LOBBY);
+    }
+
+    void LoadScene(ScenesStatus.SceneType sceneType) 
+    {
+        switch (sceneType)
         {
             case ScenesStatus.SceneType.ACT_1:
                 SceneManager.LoadScene(ACT_1);
@@ -73,16 +92,29 @@ public class ManagerScene : MonoBehaviour
             case ScenesStatus.SceneType.LOBBY:
                 SceneManager.LoadScene(LOBBY);
                 break;
+            case ScenesStatus.SceneType.CREDITS:
+                SceneManager.LoadScene(CREDITS);
+                break;
         }
     }
 
-    public void PlayGardenScene() 
+    public void PlaySpecificScene(ScenesStatus.SceneType sceneType) 
     {
-        SceneManager.LoadScene(MG3_GARDEN);
+        LoadScene(sceneType);
     }
 
-    public void PlayLobbyScene() 
+    public void PlayFoxFE() 
     {
-        SceneManager.LoadScene(LOBBY);
+        SceneManager.LoadScene(FOX_FE);
+    }
+
+    public void PlayBearFE() 
+    {
+        SceneManager.LoadScene(BEAR_FE);
+    }
+
+    public void PlayRabbitGE() 
+    {
+        SceneManager.LoadScene(RABBIT_GE);
     }
 }
