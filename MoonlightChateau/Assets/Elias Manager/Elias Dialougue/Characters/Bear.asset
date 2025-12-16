@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfile
   characterName: Fredrick
   portraits:
-  - image: {fileID: 0}
+  - image: {fileID: 21300000, guid: af9d2bc9e94ab9e478c24f598e842373, type: 3}
     emotion: 0
+  - image: {fileID: 21300000, guid: 4e298a04b832a864a8831da9bb6eab32, type: 3}
+    emotion: 3
+  - image: {fileID: 21300000, guid: adca715b13f95b4498d5d7a3781786a3, type: 3}
+    emotion: 2
+  - image: {fileID: 21300000, guid: 4918d6f3d938bab4e830a12bee3418ad, type: 3}
+    emotion: 7

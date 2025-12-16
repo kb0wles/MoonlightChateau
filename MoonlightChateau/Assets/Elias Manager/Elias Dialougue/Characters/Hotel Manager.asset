@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: Hotel Manager
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfile
   characterName: Charles
-  portraits: []
+  portraits:
+  - image: {fileID: 21300000, guid: fdea1b1a2a5facd4cbcc6dbe35521144, type: 3}
+    emotion: 0
+  - image: {fileID: 21300000, guid: e4a4f104de2d8284fa11b829f6ab8674, type: 3}
+    emotion: 3
+  - image: {fileID: 21300000, guid: 41f8e937b73c82b4395b7750337b4899, type: 3}
+    emotion: 7
