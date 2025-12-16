@@ -8,5 +8,8 @@ using UnityEngine;
         Angry,
         Surprised,
         Fearful,
-        Confused
+        Confused,
+        Snooty,
+        Sly,
+        Stressed
     }

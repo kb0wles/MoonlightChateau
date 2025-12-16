@@ -6337,7 +6337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6293823316611799195, guid: 9b928761b2b55e740a427051dd1fe4b8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9153188283834546747, guid: 9b928761b2b55e740a427051dd1fe4b8, type: 3}
       propertyPath: m_Pivot.x
@@ -7432,6 +7432,7 @@ MonoBehaviour:
   menuCredits: {fileID: 0}
   menuPause: {fileID: 0}
   menuNotes: {fileID: 0}
+  minigameBGM: {fileID: 0}
   isPaused: 0
 --- !u!1 &1392541731
 GameObject:
