@@ -59,9 +59,11 @@ public class MinigameManger : MonoBehaviour
                 timeractive = false;
                 losepopup.SetActive(true);
 
-                if (GameManager.Instance != null)
+                if (ManagerScene.Instance != null)
                 {
                     GameManager.Instance.Lose();
+                    FadeTransition.Instance.TriggerFadeIN();
+                    ManagerScene.Instance.PlayLobbyScene();
                 }
             }
         }

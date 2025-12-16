@@ -254,24 +254,9 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        if (GameManager.Instance != null)
-        {
-            if (hasClosingDialogue == true &&
-                closingDialogueNode != null &&
-                GameManager.Instance.IsAllDialogueEnded() &&
-                playedClosingDialogue == false)
-            {
-                playedClosingDialogue = true;
-                DisplayDialogue(closingDialogueNode);
-                return;
-            }
-        }
-
         if (hasClosingDialogue && playedClosingDialogue) 
         {
             GameManager.Instance.HasAllDialgueEnded();
         }
     }
-
-    void CheckHas
 }

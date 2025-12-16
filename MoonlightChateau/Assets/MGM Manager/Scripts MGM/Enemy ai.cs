@@ -57,9 +57,11 @@ public class Enemyai : MonoBehaviour
             MinigameManger.Instance.Timerdeactivate();
             MinigameManger.Instance.winpopup.SetActive(true);
 
-            if (GameManager.Instance != null) 
+            if(ManagerScene.Instance != null) 
             {
                 GameManager.Instance.Win();
+                FadeTransition.Instance.TriggerFadeIN();
+                ManagerScene.Instance.PlayGardenScene();
             }
         }
 

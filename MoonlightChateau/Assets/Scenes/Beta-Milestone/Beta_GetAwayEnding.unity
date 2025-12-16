@@ -729,11 +729,11 @@ PrefabInstance:
     - target: {fileID: 6769551660777746298, guid: fb0d7f46ad6b08d4baca86eeaea93c65, type: 3}
       propertyPath: endDialogueNode
       value: 
-      objectReference: {fileID: 11400000, guid: 630d981574da17b4b8e6885aa287ed88, type: 2}
+      objectReference: {fileID: 11400000, guid: 6394dd2f10ad00e40a7f77bf8b1077c0, type: 2}
     - target: {fileID: 6769551660777746298, guid: fb0d7f46ad6b08d4baca86eeaea93c65, type: 3}
       propertyPath: startDialogueNode
       value: 
-      objectReference: {fileID: 11400000, guid: bbb52a37e8bc1294db2795a1985fd396, type: 2}
+      objectReference: {fileID: 11400000, guid: 8a8fc57da92e17e43928be203011b834, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

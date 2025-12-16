@@ -98,6 +98,8 @@ public class GameManager : MonoBehaviour
         {
             winCondition.Instance.ChooseEndings();
         }
+
+        FadeTransition.Instance.TriggerFadeIN();
     }
 
     public void CheckCanPlayEnding()

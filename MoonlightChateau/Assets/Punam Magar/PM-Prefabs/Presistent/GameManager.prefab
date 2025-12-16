@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoseManager
   maxLose: 1
-  badEnding_Name: LoseEnding-Alpha-Milestone
-  getAwayEnding_Name: LoseEnding-Alpha-Milestone
+  badEnding_Name: Beta_BadEnding
+  getAwayEnding_Name: Beta_GetAwayEnding
   loseCount: 0
 --- !u!1 &8111285479153638658
 GameObject:
@@ -145,3 +145,4 @@ MonoBehaviour:
   maxNumOfMinigames: 3
   currentMinigameIndex: 0
   dialogueEndCount: 0
+  prevMiniGameResult: 0

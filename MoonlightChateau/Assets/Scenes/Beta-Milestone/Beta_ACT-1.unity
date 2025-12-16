@@ -513,6 +513,10 @@ PrefabInstance:
       propertyPath: startNode
       value: 
       objectReference: {fileID: 11400000, guid: f522a9fb56b88394a9e86d3f95be541e, type: 2}
+    - target: {fileID: 2543413445852540236, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f8063cad829d8974790e532ebd434b06, type: 3}
     - target: {fileID: 4551576378495097793, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_Name
       value: Rabbit
@@ -547,7 +551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8271928797426932025, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8271928797426932025, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1000,6 +1004,10 @@ PrefabInstance:
       propertyPath: startNode
       value: 
       objectReference: {fileID: 11400000, guid: 3216062d7870d984dacdcc35aa4c067c, type: 2}
+    - target: {fileID: 2543413445852540236, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2326ac3efa63c8044abd3fdb8a8ef35c, type: 3}
     - target: {fileID: 4551576378495097793, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_Name
       value: Fox
@@ -1034,7 +1042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8271928797426932025, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8271928797426932025, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1110,6 +1118,10 @@ PrefabInstance:
       propertyPath: loopNode
       value: 
       objectReference: {fileID: 11400000, guid: 636c76bdf3e1d024b84240eac0c16473, type: 2}
+    - target: {fileID: 2543413445852540236, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fab660faa881d6d4ab7b9e72c6af0c7a, type: 3}
     - target: {fileID: 4551576378495097793, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_Name
       value: Bear
@@ -1144,7 +1156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8271928797426932025, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8271928797426932025, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_SizeDelta.y
