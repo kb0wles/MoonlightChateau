@@ -37,10 +37,14 @@ public class UIManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Beta_MiniGame_1" ||
             SceneManager.GetActiveScene().name == "Beta_MiniGame_2" ||
-            SceneManager.GetActiveScene().name == "Beta_MiniGame_3" ||
-            SceneManager.GetActiveScene().name == "Beta_MiniGame_4")
+            SceneManager.GetActiveScene().name == "Beta_MiniGame_3")
         {
             StateMinigame();
+        }
+        else if (SceneManager.GetActiveScene().name == "Beta_MiniGame_4") 
+        {
+            StateMinigame();
+            gameUI.SetActive(true);
         }
     }
     void Start()
