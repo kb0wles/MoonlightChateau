@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
         // Updates wins
         if(winCondition.Instance != null)
         {
-            winCondition.Instance.WinCount();
+            winCondition.Instance.UpdateWinCounter();
             currentMinigameIndex++;
             prevMiniGameResult = MinigameStatus.Win;
         }
@@ -90,16 +90,17 @@ public class GameManager : MonoBehaviour
     }
     public void PlayEnding() 
     {
-        if(LoseManager.Instance.loseCount != 0)
+        if(LoseManager.Instance.loseCount == 0)
         {
-            LoseManager.Instance.PlayEndings();
+            winCondition.Instance.PlayTrueEnding();
+            Debug.Log("Playing Bad Ending");
         }
         else 
         {
-            winCondition.Instance.ChooseEndings();
+            LoseManager.Instance.PlayEndings();
         }
 
-        FadeTransition.Instance.TriggerFadeIN();
+        //FadeTransition.Instance.TriggerFadeIN();
     }
 
     public void CheckCanPlayEnding()
@@ -125,7 +126,7 @@ public class GameManager : MonoBehaviour
         numOfCharsInScene += numOfChars;
     }
 
-    public void HasAllDialgueEnded() 
+    public void HasAllDialogueEnded() 
     {
         if(dialogueEndCount >= numOfCharsInScene) 
         {

@@ -36,11 +36,14 @@ public class LoseManager : MonoBehaviour
     {
         if (loseCount == maxLose)
         {
+            Debug.Log("Playing Bad Ending");
             SceneManager.LoadScene(badEnding_Name);
         }
         else if (loseCount < maxLose) 
         {
             SceneManager.LoadScene(getAwayEnding_Name);
         }
+
+        
     }
 }

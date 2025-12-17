@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Purchasing;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -66,7 +67,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (startDialogueNode != null) 
+        if (startDialogueNode != null)
         {
             currentDialougeNode = startDialogueNode;
         }
@@ -78,17 +79,22 @@ public class DialogueManager : MonoBehaviour
         {
             DisplayDialogue(startDialogueNode);
         }
+
+        if(!playWhenStart && CheckHasClosingDialogue() && !playedClosingDialogue) 
+        {
+            DisplayDialogue(closingDialogueNode);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         //Old Input Handling
-        if (!isTyping && !isDialogueActive && Input.GetKeyDown(KeyCode.Space))
-        {
-            DisplayDialogue(startDialogueNode);
-            isDialogueActive = true;
-        }
+        //if (!isTyping && !isDialogueActive && Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    DisplayDialogue(startDialogueNode);
+        //    isDialogueActive = true;
+        //}
 
         // Skip typing effect on mouse click
         if (isTyping && Input.GetKeyDown(KeyCode.Mouse0))
@@ -114,6 +120,8 @@ public class DialogueManager : MonoBehaviour
         currentDialougeNode = node;
         closeableGO.SetActive(true);
 
+        isDialogueActive = true;
+
         characterIMG.sprite = node.character.GetPortraitByEmotion(node.emotion);
         nameTXT.text = node.character.characterName;
 
@@ -125,7 +133,7 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         dialogueBoxTXT.text = "";
 
-        foreach (char letter in node.dialogueText.ToCharArray()) 
+        foreach (char letter in node.dialogueText.ToCharArray())
         {
             dialogueBoxTXT.text += letter;
             yield return new WaitForSeconds(typeSpeed);
@@ -136,12 +144,12 @@ public class DialogueManager : MonoBehaviour
         AddChoices(node);
     }
 
-    void CheckForSummuryNote(DialogueNode node) 
+    void CheckForSummuryNote(DialogueNode node)
     {
         // Add notepad summary if available
         if (node.hasNotepadSummary)
         {
-            if (NotepadManager.Instance == null) 
+            if (NotepadManager.Instance == null)
             {
                 return;
             }
@@ -150,23 +158,23 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void AddChoices(DialogueNode node) 
+    void AddChoices(DialogueNode node)
     {
-        if (node.choices.Count == 0) 
+        if (node.choices.Count == 0)
         {
             // End of dialogue
             // Handle end of dialogue here
             //Close button
             AddOnClickClose();
         }
-        if (node.choices.Count == 1) 
+        if (node.choices.Count == 1)
         {
             //Linear Dialogue
             //Add next dialogue button
             //Add listener to button to go to next dialogue
             AddOnClickNext(node);
         }
-        else 
+        else
         {
             //Multiple Choices
             //Generate choice buttons
@@ -180,21 +188,21 @@ public class DialogueManager : MonoBehaviour
         nextCloseGO.SetActive(false);
     }
 
-    void AddOnClickNext(DialogueNode node) 
+    void AddOnClickNext(DialogueNode node)
     {
         nextCloseGO.SetActive(true);
         nextCloseTXT.text = "NEXT";
         nextCloseBTN.onClick.AddListener(() => OnClickNext(node));
     }
 
-    void AddOnClickClose() 
+    void AddOnClickClose()
     {
         nextCloseGO.SetActive(true);
         nextCloseTXT.text = "CLOSE";
         nextCloseBTN.onClick.AddListener(OnClickClose);
     }
 
-    void OnClickClose() 
+    void OnClickClose()
     {
         nextCloseBTN.onClick.RemoveAllListeners();
         isDialogueActive = false;
@@ -202,7 +210,7 @@ public class DialogueManager : MonoBehaviour
         nextCloseGO.SetActive(false);
 
         // set current dialogue node to loop node for future dialogues
-        if (currentCharDlgProfile != null) 
+        if (currentCharDlgProfile != null)
         {
             currentCharDlgProfile.SetLoop();
         }
@@ -211,7 +219,7 @@ public class DialogueManager : MonoBehaviour
         CheckForDialogueEnd();
     }
 
-    void SkipTyping() 
+    void SkipTyping()
     {
         StopCoroutine(typeTextCoro);
         dialogueBoxTXT.text = currentDialougeNode.dialogueText;
@@ -219,7 +227,7 @@ public class DialogueManager : MonoBehaviour
         AddChoices(currentDialougeNode);
     }
 
-    public void UpdateDialogueSettings(CharacterDialogueProfile charDlgProfile) 
+    public void UpdateDialogueSettings(CharacterDialogueProfile charDlgProfile)
     {
         currentCharDlgProfile = charDlgProfile;
 
@@ -235,27 +243,39 @@ public class DialogueManager : MonoBehaviour
         {
             if (GameManager.Instance != null)
             {
-                
+
                 // Notify GameManager that dialogue has ended
                 GameManager.Instance.dialogueEndCount++;
 
-                if (hasClosingDialogue == true &&
-                    closingDialogueNode != null &&
+                if (CheckHasClosingDialogue() &&
                     GameManager.Instance.IsAllDialogueEnded() &&
                     playedClosingDialogue == false)
                 {
                     playedClosingDialogue = true;
                     DisplayDialogue(closingDialogueNode);
+
                     return;
                 }
 
-                GameManager.Instance.HasAllDialgueEnded();
+                GameManager.Instance.HasAllDialogueEnded();
             }
         }
 
-        if (hasClosingDialogue && playedClosingDialogue) 
+        if (CheckHasClosingDialogue() && playedClosingDialogue)
         {
-            GameManager.Instance.HasAllDialgueEnded();
+            GameManager.Instance.HasAllDialogueEnded();
+        }
+    }
+
+    bool CheckHasClosingDialogue()
+    {
+        if (hasClosingDialogue == true && closingDialogueNode != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

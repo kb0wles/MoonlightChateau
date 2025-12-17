@@ -26,16 +26,16 @@ public class winCondition : MonoBehaviour
 
     public void ChooseEndings()
     {
-        if (!wonAllGames)
-            return;
-
         TrueEnding();
+    }
+
+    public void UpdateWinCounter() 
+    {
+        winCounter++;
     }
 
     public void WinCount()
     {
-        winCounter++;
-
         if (winCounter >= allGamesWon)
         {
             wonAllGames = true;
@@ -46,6 +46,14 @@ public class winCondition : MonoBehaviour
     {
         // Go to the next scene
         if (wonAllGames)
+        {
+            SceneManager.LoadScene(trueEnding);
+        }
+    }
+
+    public void PlayTrueEnding() 
+    {
+        if (winCounter >= allGamesWon) 
         {
             SceneManager.LoadScene(trueEnding);
         }
