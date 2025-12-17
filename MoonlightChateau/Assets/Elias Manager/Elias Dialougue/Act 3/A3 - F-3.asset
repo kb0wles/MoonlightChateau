@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   dialogueText: I have no motive to kill him, honest.
   character: {fileID: 11400000, guid: 82a61c1430a22f94e915961ce4c3fd19, type: 2}
-  emotion: 2
+  emotion: 0
   choices:
   - choiceLabel: 
     nextNode: {fileID: 11400000, guid: 4820478439184be40b16b202755df220, type: 2}

@@ -17,4 +17,4 @@ MonoBehaviour:
   - image: {fileID: 21300000, guid: 21a3266015006ba46b126ceeb144a79b, type: 3}
     emotion: 0
   - image: {fileID: 21300000, guid: b69102f6baf02cc46ac7ef5008f684ca, type: 3}
-    emotion: 0
+    emotion: 8
