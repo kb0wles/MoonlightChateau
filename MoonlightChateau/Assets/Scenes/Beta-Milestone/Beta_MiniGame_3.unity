@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469f8a484f8254345b31e0e55a33586f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MinigameManger
-  startTime: 100
+  startTime: 5
   timerText: {fileID: 162751374}
   winpopup: {fileID: 573387998}
   losepopup: {fileID: 666058726}

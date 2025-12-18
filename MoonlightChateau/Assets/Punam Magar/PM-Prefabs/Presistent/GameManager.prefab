@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac53422cb06d714eaee4aa63d96f1c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoseManager
-  maxLose: 1
+  maxLose: 3
   badEnding_Name: Beta_BadEnding
   getAwayEnding_Name: Beta_GetAwayEnding
   loseCount: 0
@@ -94,7 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::winCondition
   wonAllGames: 0
   trueEnding: Beta_MiniGame_4
-  allGamesWon: 1
+  winCounter: 0
+  allGamesWon: 3
 --- !u!1 &8300244343970826618
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66224a6a1347cb459dbb35bbc469071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  changeScenesBTN: {fileID: 0}
   maxNumOfMinigames: 3
   currentMinigameIndex: 0
   dialogueEndCount: 0

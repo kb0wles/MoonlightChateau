@@ -1256,11 +1256,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2983296558802007462, guid: 76f6773e17a16c3469ba915fb842c232, type: 3}
       propertyPath: currentScene
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2983296558802007462, guid: 76f6773e17a16c3469ba915fb842c232, type: 3}
       propertyPath: nextSceneToLoad
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5059831226568979814, guid: 76f6773e17a16c3469ba915fb842c232, type: 3}
       propertyPath: m_Name

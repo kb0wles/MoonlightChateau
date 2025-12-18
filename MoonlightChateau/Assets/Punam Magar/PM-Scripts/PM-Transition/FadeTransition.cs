@@ -37,6 +37,12 @@ public class FadeTransition : MonoBehaviour
 
     public void TriggerFadeIN()
     {
+        if(SceneTracker.Instance.currentScene == ScenesStatus.SceneType.MINIGAME_4) 
+        {
+            // Do not trigger fade in on lobby scene
+            return;
+        }
+
         fadeAnimator.SetTrigger("FadeIN");
     }
 }

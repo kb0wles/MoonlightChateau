@@ -34,7 +34,7 @@ public class LoseManager : MonoBehaviour
 
     public void PlayEndings() 
     {
-        if (loseCount == maxLose)
+        if (loseCount >= maxLose)
         {
             Debug.Log("Playing Bad Ending");
             SceneManager.LoadScene(badEnding_Name);

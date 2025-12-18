@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public static event System.Action OnCanPlayEnding;
     public static event System.Action OnDialogueEnd;
 
-    [SerializeField] GameObject changeScenesBTN;
+    //[SerializeField] GameObject changeScenesBTN;
 
     [SerializeField] int maxNumOfMinigames = 3;
     public int currentMinigameIndex = 0;
@@ -133,7 +133,7 @@ public class GameManager : MonoBehaviour
             OnDialogueEnd?.Invoke();
             //ManagerScene.Instance.PlayNextScene();
             // Play Fide Transition and go to next scene
-            FadeTransition.Instance.GoToNextScene();
+            FadeTransition.Instance.TriggerFadeIN();
         }
     }
 

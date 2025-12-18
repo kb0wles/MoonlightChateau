@@ -80,10 +80,10 @@ public class DialogueManager : MonoBehaviour
             DisplayDialogue(startDialogueNode);
         }
 
-        if(!playWhenStart && CheckHasClosingDialogue() && !playedClosingDialogue) 
-        {
-            DisplayDialogue(closingDialogueNode);
-        }
+        //if(!playWhenStart && CheckHasClosingDialogue() && !playedClosingDialogue) 
+        //{
+        //    DisplayDialogue(closingDialogueNode);
+        //}
     }
 
     // Update is called once per frame
@@ -243,7 +243,6 @@ public class DialogueManager : MonoBehaviour
         {
             if (GameManager.Instance != null)
             {
-
                 // Notify GameManager that dialogue has ended
                 GameManager.Instance.dialogueEndCount++;
 

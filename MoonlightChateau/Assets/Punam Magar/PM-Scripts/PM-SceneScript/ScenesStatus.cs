@@ -5,6 +5,7 @@ public class ScenesStatus
 {
     public enum SceneType
     {
+        NONE,
         INTRO,
         ACT_1,
         ACT_2,
