@@ -1122,6 +1122,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fab660faa881d6d4ab7b9e72c6af0c7a, type: 3}
+    - target: {fileID: 2769781715828533118, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
+      propertyPath: hoverScale
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4551576378495097793, guid: be6a639ee7b074142a8c79256cbfd5f6, type: 3}
       propertyPath: m_Name
       value: Bear
