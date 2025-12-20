@@ -75,4 +75,24 @@ public class ButtonFunction : MonoBehaviour
     }
 
     #endregion
+
+    #region Notepad UI Buttons
+
+    public void OnNotepadClose()
+    {
+        if(NotepadManager.Instance != null)
+        {
+            NotepadManager.Instance.OnClickCloseNotepad();
+        }
+    }
+
+    public void OnNotepadOpen()
+    {
+        if (NotepadManager.Instance != null)
+        {
+            NotepadManager.Instance.OnClickOpenNotepad();
+        }
+    }
+
+    #endregion
 }
