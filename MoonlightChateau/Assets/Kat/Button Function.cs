@@ -59,19 +59,19 @@ public class ButtonFunction : MonoBehaviour
     public void OnMG1()
     {
         UIManager.instance.StateMinigame();
-        SceneManager.LoadScene("Minigame 1 - E");
+        SceneManager.LoadScene("Beta_MiniGame_1");
     }
 
     public void OnMG2()
     {
         UIManager.instance.StateMinigame();
-        SceneManager.LoadScene("Minigame-Alpha-Milestone");
+        SceneManager.LoadScene("Beta_MiniGame_2");
     }
 
     public void OnMG3()
     {
         UIManager.instance.StateMinigame();
-        SceneManager.LoadScene("Minigame 3");
+        SceneManager.LoadScene("Beta_MiniGame_3");
     }
 
     #endregion
