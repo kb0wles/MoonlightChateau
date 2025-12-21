@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,12 @@ public class Strike_Counter : MonoBehaviour
     [SerializeField] Sprite newSprite;
     int strikepos;
     [SerializeField] int strikes;
-    bool gameover;
+    bool gameover, start;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        start = false;
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class Strike_Counter : MonoBehaviour
 
     public void StrikeCounter()
     {
-        if (!gameover)
+        if (!gameover && start)
         {
             changestrike();
             Debug.Log(strikes);
@@ -68,4 +69,9 @@ public class Strike_Counter : MonoBehaviour
         gameover = true;
     }
 
+    public void GameStart()
+    {
+        start = true;
+        strikes = 0;
+    }
 }
