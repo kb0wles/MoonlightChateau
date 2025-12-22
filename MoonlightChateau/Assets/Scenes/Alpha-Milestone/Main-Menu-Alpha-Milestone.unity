@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuSFXManager
   sfxSource: {fileID: 118356515}
   settings: {fileID: 11400000, guid: 2096537010e1cb0489c55c6557c15d54, type: 2}
-  navigateSound: {fileID: 8300000, guid: cfca01f89f581824b9c8100ba6582c5e, type: 3}
+  navigateSound: {fileID: 0}
   selectSound: {fileID: 8300000, guid: 9144676e802df2c40b3bf43424897f7f, type: 3}
 --- !u!4 &118356517
 Transform:
@@ -2580,15 +2580,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startDialogueNode: {fileID: 11400000, guid: b6ba635257e25fb4cb3c22d738e7af51, type: 2}
   endDialogueNode: {fileID: 0}
+  hasClosingDialogue: 0
+  closingDialogueNode: {fileID: 0}
   choiceParent: {fileID: 7453061198454939138}
   nextCloseGO: {fileID: 620655003799430941}
   closeableGO: {fileID: 5269217008579693617}
-  typeSpeed: 0.03
   dialogueBoxTXT: {fileID: 6924287685215453535}
   nameTXT: {fileID: 989808578135254704}
   characterIMG: {fileID: 4923762154575065681}
-  Isminigame2: 0
+  typeSpeed: 0.03
+  playWhenStart: 0
   currentDialougeNode: {fileID: 0}
+  currentCharDlgProfile: {fileID: 0}
   isTyping: 0
 --- !u!1 &1441372642469402149
 GameObject:
@@ -5980,6 +5983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2d33a7b1c552c4d99a766f55e4d088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIOption
+  sfxManager: {fileID: 0}
   musicSlider: {fileID: 4804116535930491269}
   sfxSlider: {fileID: 2347822219177658435}
 --- !u!224 &3966708875715448548
@@ -7516,6 +7520,7 @@ MonoBehaviour:
   menuCredits: {fileID: 7206929927441567725}
   menuPause: {fileID: 4123465611209604806}
   menuNotes: {fileID: 3684652234838290468}
+  minigameBGM: {fileID: 0}
   isPaused: 0
 --- !u!1 &5174642312351803055
 GameObject:

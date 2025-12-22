@@ -621,7 +621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuSFXManager
   sfxSource: {fileID: 238733496}
   settings: {fileID: 11400000, guid: 2096537010e1cb0489c55c6557c15d54, type: 2}
-  navigateSound: {fileID: 8300000, guid: cfca01f89f581824b9c8100ba6582c5e, type: 3}
+  navigateSound: {fileID: 0}
   selectSound: {fileID: 8300000, guid: 9144676e802df2c40b3bf43424897f7f, type: 3}
 --- !u!4 &238733498
 Transform:

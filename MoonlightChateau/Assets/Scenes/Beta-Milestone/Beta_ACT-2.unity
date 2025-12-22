@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &5355871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3120283180940137306, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
-  m_PrefabInstance: {fileID: 61875574}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8830816
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +447,7 @@ PrefabInstance:
     - target: {fileID: 5153015591222413471, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
       propertyPath: menuNotes
       value: 
-      objectReference: {fileID: 5355871}
+      objectReference: {fileID: 0}
     - target: {fileID: 5482561494673308052, guid: ce3bf5b61caee6a4fadfee0a8a009c80, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -821,7 +816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuSFXManager
   sfxSource: {fileID: 238733496}
   settings: {fileID: 11400000, guid: 2096537010e1cb0489c55c6557c15d54, type: 2}
-  navigateSound: {fileID: 8300000, guid: cfca01f89f581824b9c8100ba6582c5e, type: 3}
+  navigateSound: {fileID: 0}
   selectSound: {fileID: 8300000, guid: 9144676e802df2c40b3bf43424897f7f, type: 3}
 --- !u!4 &238733498
 Transform:
