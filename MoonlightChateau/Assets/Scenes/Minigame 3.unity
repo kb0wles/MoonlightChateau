@@ -490,6 +490,8 @@ MonoBehaviour:
   timerText: {fileID: 162751374}
   winpopup: {fileID: 573387998}
   losepopup: {fileID: 666058726}
+  toturialGO: {fileID: 0}
+  toturialTime: 5
 --- !u!1 &88351754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4408,8 +4410,8 @@ Transform:
   m_GameObject: {fileID: 1523539736}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.313274, y: -1.50001, z: 28.533619}
-  m_LocalScale: {x: 6.221045, y: 4, z: 1.5}
+  m_LocalPosition: {x: -17.3586, y: -1.5, z: 28.6146}
+  m_LocalScale: {x: 6.2439537, y: 4, z: 1.6618158}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1773035671}
